@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "xhg-zzzz",
 
 	// 站点 URL
-	site_url: "https://394000.xyz",
+	site_url: "https://blog.xhgzzzz.xyz",
 
 	// 站点描述
 	description:
