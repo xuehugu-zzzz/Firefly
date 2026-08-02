@@ -2,11 +2,11 @@ import type { CommentConfig } from "../types/commentConfig";
 
 export const commentConfig: CommentConfig = {
 	// 评论系统类型: none, twikoo, waline, giscus, disqus, artalk，默认为none，即不启用评论系统
-	type: "twikoo",
+	type: "none",
 
 	//twikoo评论系统配置
 	twikoo: {
-		envId: "https://twikoo.vercel.app",
+		envId: "https://twikoo.vercel.app", // 请替换为你自己的 Twikoo 后端地址
 		// 设置 Twikoo 评论系统语言
 		lang: "zh-CN",
 		// 是否启用文章访问量统计功能
@@ -15,7 +15,7 @@ export const commentConfig: CommentConfig = {
 		// 中国推荐1: https://registry.npmmirror.com/twikoo/1.7.12/files/dist/twikoo.min.js
 		// 中国推荐2: https://s4.zstatic.net/npm/twikoo@1.7.12/dist/twikoo.min.js
 		// 国际推荐: https://cdn.jsdelivr.net/npm/twikoo@1.7.12/dist/twikoo.min.js
-		jsUrl: "https://cdn.jsdelivr.net/npm/twikoo@1.7.12/dist/twikoo.min.js",
+		jsUrl: "https://registry.npmmirror.com/twikoo/1.7.12/files/dist/twikoo.min.js", // 改用国内镜像更快
 		// Twikoo 自定义 CSS 文件地址，为空则不加载
 		cssUrl: "/assets/css/twikoo-custom.css",
 	},
