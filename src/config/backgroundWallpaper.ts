@@ -46,7 +46,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			"assets/images/DesktopWallpaper/s1.jpg",
 			"assets/images/DesktopWallpaper/ava.jpg",
 			"assets/images/DesktopWallpaper/xhg1.jpg",
-			"assets/images/DesktopWallpaper/c3.jpg",
+			"assets/images/DesktopWallpaper/x1.jpg",
 			"assets/images/DesktopWallpaper/v7.jpg",
 			"assets/images/DesktopWallpaper/v8.jpg",
 		],
