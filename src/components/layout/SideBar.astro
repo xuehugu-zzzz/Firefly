@@ -2,6 +2,7 @@
 import type { MarkdownHeading } from "astro";
 import Advertisement from "@/components/widget/Advertisement.astro";
 import Announcement from "@/components/widget/Announcement.astro";
+import BilibiliCard from "@/components/widget/BilibiliCard.astro";
 import Calendar from "@/components/widget/Calendar.astro";
 import Categories from "@/components/widget/Categories.astro";
 import Music from "@/components/widget/Music.astro";
@@ -50,6 +51,7 @@ const componentMap = {
 	calendar: Calendar,
 	music: Music,
 	siteInfo: SiteInfo,
+	bilibili: BilibiliCard,
 };
 
 // 获取侧边栏位置

@@ -36,15 +36,15 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	// 留言板
 	links.push(LinkPresets.Guestbook);
 
+	// 我的B站（独立入口，直接显示在导航栏）
+	links.push(LinkPresets.Bilibili);
+
 	// 我的及其子菜单
 	links.push({
 		name: "我的",
 		url: "#",
 		icon: "material-symbols:person",
 		children: [
-			// 我的B站
-			LinkPresets.Bilibili,
-
 			// 相册
 			LinkPresets.Gallery,
 
