@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "check": "astro check",
+    "prebuild": "node scripts/fetch-bilibili.mjs",
     "build": "node scripts/generate-icons.js && npx tsx scripts/generate-lqips.ts && astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",

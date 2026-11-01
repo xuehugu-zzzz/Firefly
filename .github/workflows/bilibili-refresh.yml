@@ -1,24 +1,44 @@
 name: Refresh Bilibili Stats
 
-# 定时触发一次 Pages 部署，部署流程会在构建前重新抓取 B 站数据
+# 定时抓取 B 站数据并提交；提交会触发 Cloudflare Pages 重新构建
 on:
   schedule:
     - cron: "0 */6 * * *" # 每 6 小时（UTC）
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/bilibili-refresh.yml"
 
 permissions:
-  actions: write
+  contents: write
 
 concurrency:
   group: bilibili-refresh
   cancel-in-progress: false
 
 jobs:
-  trigger-deploy:
+  refresh:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger GitHub Pages deploy
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-        run: gh workflow run "Deploy to GitHub Pages" --repo "$REPO" --ref master
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch Bilibili data
+        run: node scripts/fetch-bilibili.mjs
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- src/data/bilibili.json; then
+            echo "数据无变化，跳过提交"
+            exit 0
+          fi
+          git add src/data/bilibili.json
+          git commit -m "chore: 定时更新 B 站数据"
+          git push

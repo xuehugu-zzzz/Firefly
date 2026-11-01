@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 /**
- * 抓取 B 站用户公开数据（视频列表 + 播放量 + 粉丝数），写入 src/data/bilibili.json
+ * 抓取 B 站用户公开数据（视频列表 + 播放量 + 粉丝数 + 公开收藏夹），写入 src/data/bilibili.json
  *
  * 用法:
  *   node scripts/fetch-bilibili.mjs
- *   BILI_UID=123456 BILI_FAV_IDS=111,222 node scripts/fetch-bilibili.mjs
+ *   BILI_UID=123456 BILI_FAV_IDS=none node scripts/fetch-bilibili.mjs          # 不抓收藏夹
+ *   BILI_FAV_IDS=111,222 BILI_FAV_MAX_PAGES=3 node scripts/fetch-bilibili.mjs  # 只抓指定收藏夹
  *
  * 说明:
  * - B 站 space 接口有风控，必须带 WBI 签名 + buvid cookie + 模拟浏览器的请求头
@@ -20,12 +21,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_FILE = path.join(__dirname, "..", "src", "data", "bilibili.json");
 
 const UID = Number(process.env.BILI_UID || 1826932251);
-const FAV_IDS = (process.env.BILI_FAV_IDS || "")
-	.split(",")
-	.map((s) => s.trim())
-	.filter(Boolean);
+// all = 所有公开收藏夹（默认）；none = 不抓；否则逗号分隔的收藏夹 id
+const FAV_MODE = (process.env.BILI_FAV_IDS || "all").trim();
 const MAX_FAV_PAGES = Number(process.env.BILI_FAV_MAX_PAGES || 1);
 const RETRY_DELAY_MS = Number(process.env.BILI_RETRY_DELAY_MS || 8000);
+const TIMEOUT_MS = 20000;
 
 const UA =
 	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
@@ -41,6 +41,8 @@ const MIXIN_TAB = [
 const RISK_CODES = new Set([-412, -352, -799, -101]);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const md5 = (s) => crypto.createHash("md5").update(s).digest("hex");
+const timedFetch = (url, opts = {}) =>
+	fetch(url, { ...opts, signal: AbortSignal.timeout(TIMEOUT_MS) });
 
 let cookie = "";
 
@@ -59,7 +61,7 @@ function headers(referer) {
 }
 
 async function getJson(url, referer) {
-	const res = await fetch(url, { headers: headers(referer) });
+	const res = await timedFetch(url, { headers: headers(referer) });
 	const text = await res.text();
 	if (text.trimStart().startsWith("<")) {
 		const err = new Error(`风控拦截 (HTTP ${res.status}): 返回 HTML 而非 JSON`);
@@ -76,19 +78,25 @@ async function getJson(url, referer) {
 }
 
 /** 带退避重试的请求：遇到风控码就换 cookie 再来 */
-async function getJsonRetry(url, referer, label) {
+async function getJsonRetry(url, referer, label, attempts = 3) {
 	let lastErr;
-	for (let attempt = 1; attempt <= 3; attempt += 1) {
+	for (let attempt = 1; attempt <= attempts; attempt += 1) {
 		try {
 			return await getJson(url, referer);
 		} catch (err) {
 			lastErr = err;
 			if (!RISK_CODES.has(err.code)) throw err;
 			console.warn(
-				`[bilibili] ${label} 第 ${attempt} 次失败 (code=${err.code})，${RETRY_DELAY_MS / 1000}s 后重试…`,
+				`[bilibili] ${label} 第 ${attempt} 次失败 (code=${err.code})，${(RETRY_DELAY_MS * attempt) / 1000}s 后重试…`,
 			);
 			await sleep(RETRY_DELAY_MS * attempt);
-			if (attempt < 3) await initCookie();
+			if (attempt < attempts) {
+				try {
+					await initCookie();
+				} catch {
+					/* 换 cookie 失败不影响重试 */
+				}
+			}
 		}
 	}
 	throw lastErr;
@@ -102,7 +110,7 @@ async function initCookie() {
 
 /** 2. 拿 WBI 密钥并生成签名（nav 未登录返回 -101，但 wbi_img 依然有效） */
 async function getSigner() {
-	const res = await fetch("https://api.bilibili.com/x/web-interface/nav", {
+	const res = await timedFetch("https://api.bilibili.com/x/web-interface/nav", {
 		headers: headers("https://www.bilibili.com/"),
 	});
 	const json = await res.json();
@@ -144,6 +152,7 @@ const withThumb = (u, size = "@480w_270h_1c.webp") =>
 
 const REF_VIDEO = `https://space.bilibili.com/${UID}/video`;
 const REF_SPACE = `https://space.bilibili.com/${UID}`;
+const REF_FAV = `https://space.bilibili.com/${UID}/favlist`;
 
 /** 主接口：space/wbi/arc/search（含播放/弹幕/评论数） */
 async function fetchVideosByArcSearch(sign) {
@@ -240,15 +249,31 @@ async function fetchUser() {
 	};
 }
 
-async function fetchFavorite(mediaId) {
+/** 列出该用户的公开收藏夹 */
+async function fetchFavFolders() {
+	const data = await getJsonRetry(
+		`https://api.bilibili.com/x/v3/fav/folder/created/list-all?up_mid=${UID}`,
+		REF_FAV,
+		"fav-folders",
+	);
+	return (data.list || []).map((f) => ({
+		id: f.id,
+		title: f.title,
+		mediaCount: f.media_count ?? 0,
+	}));
+}
+
+async function fetchFavorite(folder) {
 	const medias = [];
 	let info = null;
+	let hasMore = false;
 
 	for (let page = 1; page <= MAX_FAV_PAGES; page += 1) {
 		const data = await getJsonRetry(
-			`https://api.bilibili.com/x/v3/fav/resource/list?media_id=${mediaId}&ps=20&pn=${page}&platform=web&order=mtime&type=0`,
-			`https://space.bilibili.com/${UID}/favlist?fid=${mediaId}`,
-			`fav:${mediaId}`,
+			`https://api.bilibili.com/x/v3/fav/resource/list?media_id=${folder.id}&ps=20&pn=${page}&platform=web&order=mtime&type=0`,
+			`${REF_FAV}?fid=${folder.id}`,
+			`fav:${folder.id}`,
+			2,
 		);
 		info = info || data.info;
 		for (const m of data.medias || []) {
@@ -263,15 +288,18 @@ async function fetchFavorite(mediaId) {
 				url: `https://www.bilibili.com/video/${m.bvid}`,
 			});
 		}
-		if (!data.has_more) break;
+		hasMore = Boolean(data.has_more);
+		if (!hasMore) break;
 		await sleep(300);
 	}
 
 	return {
-		id: mediaId,
-		title: info?.title || "收藏夹",
-		mediaCount: info?.media_count ?? medias.length,
+		id: folder.id,
+		title: info?.title || folder.title,
+		mediaCount: info?.media_count ?? folder.mediaCount,
+		url: `${REF_FAV}?fid=${folder.id}`,
 		medias,
+		hasMore,
 	};
 }
 
@@ -287,15 +315,35 @@ async function main() {
 	const totalPlay = videos.reduce((sum, v) => sum + v.play, 0);
 	console.log(`[bilibili] 视频 ${videos.length}/${total} 个，总播放 ${totalPlay}`);
 
-	const favorites = [];
-	for (const id of FAV_IDS) {
-		try {
-			const fav = await fetchFavorite(id);
-			favorites.push(fav);
-			console.log(`[bilibili] 收藏夹「${fav.title}」${fav.medias.length} 条`);
-		} catch (err) {
-			console.warn(`[bilibili] 收藏夹 ${id} 抓取失败: ${err.message}`);
+	// 收藏夹
+	let targets = [];
+	if (FAV_MODE.toLowerCase() !== "none") {
+		const folders = await fetchFavFolders();
+		console.log(`[bilibili] 公开收藏夹 ${folders.length} 个`);
+		if (FAV_MODE.toLowerCase() === "all") {
+			targets = folders;
+		} else {
+			const ids = new Set(
+				FAV_MODE.split(",")
+					.map((s) => s.trim())
+					.filter(Boolean),
+			);
+			targets = folders.filter((f) => ids.has(String(f.id)));
 		}
+	}
+
+	const favorites = [];
+	for (const folder of targets) {
+		try {
+			const fav = await fetchFavorite(folder);
+			favorites.push(fav);
+			console.log(
+				`[bilibili] 收藏夹「${fav.title}」抓到 ${fav.medias.length}/${fav.mediaCount} 条`,
+			);
+		} catch (err) {
+			console.warn(`[bilibili] 收藏夹「${folder.title}」抓取失败: ${err.message}`);
+		}
+		await sleep(400);
 	}
 
 	const payload = {
@@ -307,6 +355,7 @@ async function main() {
 			totalPlay,
 			totalDanmaku: videos.reduce((s, v) => s + v.danmaku, 0),
 			totalComment: videos.reduce((s, v) => s + v.comment, 0),
+			favFolderCount: favorites.length,
 		},
 		videos,
 		favorites,

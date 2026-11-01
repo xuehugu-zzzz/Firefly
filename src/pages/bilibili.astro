@@ -1,12 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
-import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import biliData from "@/data/bilibili.json";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
 
 const title = "我的B站";
-const description = "我在 B 站的投稿视频与数据，每 6 小时自动更新。";
+const description = "我在 B 站的投稿视频、数据与公开收藏夹，自动更新。";
 
 const { user, stats, videos, fetchedAt, favorites } = biliData;
+
+const FAV_PREVIEW = 12;
 
 const fmtNum = (n: number) => {
 	if (n >= 100000000) return `${(n / 100000000).toFixed(1)}亿`;
@@ -34,6 +36,8 @@ const fmtDate = (iso: string | null) =>
 	iso ? dateFmt.format(new Date(iso)).replace(/\//g, "-") : "";
 const fmtDateTime = (iso: string) =>
 	timeFmt.format(new Date(iso)).replace(/\//g, "-");
+
+const favTotal = favorites.reduce((sum, f) => sum + f.mediaCount, 0);
 
 const statItems = [
 	{
@@ -78,7 +82,9 @@ const statItems = [
         />
         <div class="flex-1 text-center sm:text-left">
           <div class="flex items-center justify-center sm:justify-start gap-2">
-            <h1 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+            <h1
+              class="text-2xl font-bold text-neutral-900 dark:text-neutral-100"
+            >
               {user.name}
             </h1>
             <span
@@ -104,7 +110,6 @@ const statItems = [
         </div>
       </div>
 
-      <!-- 数据统计 -->
       <div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
         {
           statItems.map((item) => (
@@ -122,7 +127,7 @@ const statItems = [
       </div>
     </div>
 
-    <!-- 视频列表 -->
+    <!-- 投稿视频 -->
     <div class="card-base px-6 py-6">
       <div class="mb-4 flex items-center gap-2">
         <Icon
@@ -185,11 +190,11 @@ const statItems = [
       }
     </div>
 
-    <!-- 收藏夹（配置了 BILI_FAV_IDS 才会显示） -->
+    <!-- 公开收藏夹 -->
     {
       favorites.length > 0 && (
         <div class="card-base px-6 py-6">
-          <div class="mb-4 flex items-center gap-2">
+          <div class="mb-5 flex flex-wrap items-center gap-2">
             <Icon
               name="material-symbols:star-rounded"
               class="text-[1.4rem] text-(--primary)"
@@ -197,50 +202,75 @@ const statItems = [
             <h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">
               我的收藏
             </h2>
+            <span class="text-sm text-(--content-meta)">
+              {favorites.length} 个收藏夹 · 共 {favTotal} 个视频
+            </span>
           </div>
-          {favorites.map((fav) => (
-            <div class="mb-6 last:mb-0">
-              <div class="mb-2 flex items-center gap-2">
-                <span class="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                  {fav.title}
-                </span>
-                <span class="text-xs text-(--content-meta)">
-                  {fav.mediaCount} 个视频
-                </span>
-              </div>
-              <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {fav.medias.map((media) => (
+
+          <div class="flex flex-col gap-7">
+            {favorites.map((fav) => (
+              <section>
+                <div class="mb-3 flex items-center justify-between gap-3">
+                  <div class="flex min-w-0 items-center gap-2">
+                    <h3 class="truncate text-base font-semibold text-neutral-900 dark:text-neutral-100">
+                      {fav.title}
+                    </h3>
+                    <span class="shrink-0 text-xs text-(--content-meta)">
+                      {fav.mediaCount} 个视频
+                    </span>
+                  </div>
                   <a
-                    href={media.url}
+                    href={fav.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="group flex gap-3 rounded-(--radius-large) border border-(--line-divider) p-2 transition hover:shadow-md"
+                    class="inline-flex shrink-0 items-center gap-0.5 text-xs text-(--primary) hover:underline"
                   >
-                    <div class="relative aspect-video w-32 shrink-0 overflow-hidden rounded-lg bg-(--btn-regular-bg)">
-                      <img
-                        src={media.cover}
-                        alt={media.title}
-                        referrerpolicy="no-referrer"
-                        loading="lazy"
-                        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <span class="absolute right-1 bottom-1 rounded bg-black/70 px-1 text-[10px] text-white">
-                        {media.duration}
-                      </span>
-                    </div>
-                    <div class="min-w-0 flex-1">
-                      <h4 class="line-clamp-2 text-sm leading-snug font-medium text-neutral-900 transition-colors group-hover:text-(--primary) dark:text-neutral-100">
-                        {media.title}
-                      </h4>
-                      <p class="mt-1 truncate text-xs text-(--content-meta)">
-                        UP：{media.upper}
-                      </p>
-                    </div>
+                    在 B 站查看
+                    <Icon
+                      name="material-symbols:open-in-new-rounded"
+                      class="text-[0.9rem]"
+                    />
                   </a>
-                ))}
-              </div>
-            </div>
-          ))}
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {fav.medias.slice(0, FAV_PREVIEW).map((media) => (
+                    <a
+                      href={media.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="group"
+                    >
+                      <div class="relative aspect-video overflow-hidden rounded-lg bg-(--btn-regular-bg)">
+                        <img
+                          src={media.cover}
+                          alt={media.title}
+                          referrerpolicy="no-referrer"
+                          loading="lazy"
+                          class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                        <span class="absolute right-1.5 bottom-1.5 rounded bg-black/70 px-1 text-[10px] text-white">
+                          {media.duration}
+                        </span>
+                      </div>
+                      <p class="mt-1.5 line-clamp-2 text-xs leading-snug text-neutral-800 transition-colors group-hover:text-(--primary) dark:text-neutral-200">
+                        {media.title}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+
+                {fav.mediaCount > FAV_PREVIEW && (
+                  <p class="mt-2 text-xs text-(--content-meta)">
+                    这里只显示最近收藏的 {Math.min(
+                      fav.medias.length,
+                      FAV_PREVIEW,
+                    )} 个，完整 {fav.mediaCount} 个请点「在 B 站查看」
+                  </p>
+                )}
+              </section>
+            ))}
+          </div>
         </div>
       )
     }
@@ -248,7 +278,7 @@ const statItems = [
     <!-- 数据来源说明 -->
     <div class="px-2 pb-2 text-center text-xs text-(--content-meta)">
       <p>
-        数据来自 B 站公开接口，更新于 {fmtDateTime(fetchedAt)}，每 6 小时自动刷新
+        数据来自 B 站公开接口，更新于 {fmtDateTime(fetchedAt)}，自动定时刷新
       </p>
     </div>
   </div>
