@@ -15,9 +15,7 @@ export const siteConfig: SiteConfig = {
 	site_url: "https://blog.xhgzzzz.xyz",
 
 	// 站点描述
-	description:
-		"xhg个人博客网站 it's my first blog! ",
-		
+	description: "xhg个人博客网站 it's my first blog! ",
 
 	// 站点关键词
 	keywords: [
