@@ -1,0 +1,62 @@
+---
+import GradeChart from "@/components/features/GradeChart.astro";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+const title = "成绩曲线";
+const description = "把每一次考试的分数和排名画成曲线，看看自己到底在往哪儿走。";
+
+// ↓↓↓ 只需要改这里的数字，页面就会变 ↓↓↓
+const totalScore = [
+	{ label: "高一上期末", value: 452 },
+	{ label: "高一下期末", value: 461 },
+	{ label: "高二上期末", value: 455 },
+	{ label: "高二下期末", value: 468 },
+	{ label: "高三定位考", value: 521 },
+];
+
+const classRank = [
+	{ label: "高一上期末", value: 18 },
+	{ label: "高一下期末", value: 15 },
+	{ label: "高二上期末", value: 16 },
+	{ label: "高二下期末", value: 9 },
+	{ label: "高三定位考", value: 2 },
+];
+---
+
+<MainGridLayout title={title} description={description}>
+	<div class="flex flex-col gap-4">
+		<div class="card-base px-6 py-6">
+			<h1 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">
+				成绩曲线
+			</h1>
+			<p class="mt-2 text-sm text-(--content-meta)">
+				每一次大考的一次记录。曲线不会骗人，努力过的地方都在这上面。
+			</p>
+		</div>
+
+		<GradeChart
+			title="总分"
+			subtitle="满分 750"
+			unit="分"
+			data={totalScore}
+		/>
+
+		<GradeChart
+			title="班级排名"
+			subtitle="名次越小越靠上"
+			unit="名"
+			invert={true}
+			data={classRank}
+		/>
+
+		<div class="card-base px-6 py-4 text-xs text-(--content-meta)">
+			<p>
+				这是<b>示例数据</b>，放在
+				<code class="rounded bg-(--btn-regular-bg) px-1 py-0.5"
+					>src/pages/grades.astro</code
+				>
+				顶部的两个数组里，改成你自己的真实成绩就会自动画出来。
+			</p>
+		</div>
+	</div>
+</MainGridLayout>

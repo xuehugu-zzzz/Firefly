@@ -8,7 +8,7 @@ const description = "我在 B 站的投稿视频、数据与公开收藏夹，�
 
 const { user, stats, videos, fetchedAt, favorites } = biliData;
 
-const FAV_PREVIEW = 12;
+const FAV_PREVIEW = 6;
 
 const fmtNum = (n: number) => {
 	if (n >= 100000000) return `${(n / 100000000).toFixed(1)}亿`;
@@ -209,7 +209,7 @@ const statItems = [
 
           <div class="flex flex-col gap-7">
             {favorites.map((fav) => (
-              <section>
+              <section data-fav-section>
                 <div class="mb-3 flex items-center justify-between gap-3">
                   <div class="flex min-w-0 items-center gap-2">
                     <h3 class="truncate text-base font-semibold text-neutral-900 dark:text-neutral-100">
@@ -234,12 +234,14 @@ const statItems = [
                 </div>
 
                 <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  {fav.medias.slice(0, FAV_PREVIEW).map((media) => (
+                  {fav.medias.map((media, idx) => (
                     <a
                       href={media.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="group"
+                      data-fav-item={fav.id}
+                      data-fav-idx={idx}
+                      class:list={["group", idx >= FAV_PREVIEW && "hidden"]}
                     >
                       <div class="relative aspect-video overflow-hidden rounded-lg bg-(--btn-regular-bg)">
                         <img
@@ -260,12 +262,22 @@ const statItems = [
                   ))}
                 </div>
 
-                {fav.mediaCount > FAV_PREVIEW && (
+                {fav.medias.length > FAV_PREVIEW && (
+                  <button
+                    type="button"
+                    data-fav-toggle={fav.id}
+                    data-fav-total={fav.medias.length}
+                    data-expanded="false"
+                    class="mt-3 w-full rounded-lg bg-(--btn-regular-bg) py-2 text-xs text-neutral-700 transition hover:opacity-80 dark:text-neutral-300"
+                  >
+                    <span>展开全部 {fav.medias.length} 个</span>
+                  </button>
+                )}
+
+                {fav.mediaCount > fav.medias.length && (
                   <p class="mt-2 text-xs text-(--content-meta)">
-                    这里只显示最近收藏的 {Math.min(
-                      fav.medias.length,
-                      FAV_PREVIEW,
-                    )} 个，完整 {fav.mediaCount} 个请点「在 B 站查看」
+                    这里只显示最近收藏的 {fav.medias.length} 个，完整 {fav.mediaCount}{" "}
+                    个请点「在 B 站查看」
                   </p>
                 )}
               </section>
@@ -283,3 +295,29 @@ const statItems = [
     </div>
   </div>
 </MainGridLayout>
+
+<script>
+  const PREVIEW = 6;
+
+  document.querySelectorAll("[data-fav-toggle]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.getAttribute("data-fav-toggle");
+      const section = btn.closest("[data-fav-section]");
+      if (!id || !section) return;
+
+      const willExpand = btn.getAttribute("data-expanded") !== "true";
+      section.querySelectorAll('[data-fav-item="' + id + '"]').forEach((item) => {
+        if (Number(item.getAttribute("data-fav-idx")) >= PREVIEW) {
+          item.classList.toggle("hidden", !willExpand);
+        }
+      });
+
+      btn.setAttribute("data-expanded", String(willExpand));
+      const label = btn.querySelector("span");
+      if (label) {
+        const total = btn.getAttribute("data-fav-total");
+        label.textContent = willExpand ? "收起" : "展开全部 " + total + " 个";
+      }
+    });
+  });
+</script>
