@@ -1,0 +1,24 @@
+name: Refresh Bilibili Stats
+
+# 定时触发一次 Pages 部署，部署流程会在构建前重新抓取 B 站数据
+on:
+  schedule:
+    - cron: "0 */6 * * *" # 每 6 小时（UTC）
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+concurrency:
+  group: bilibili-refresh
+  cancel-in-progress: false
+
+jobs:
+  trigger-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger GitHub Pages deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: gh workflow run "Deploy to GitHub Pages" --repo "$REPO" --ref master

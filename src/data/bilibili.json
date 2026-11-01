@@ -1,0 +1,88 @@
+{
+  "uid": 1826932251,
+  "fetchedAt": "2026-11-01T05:23:47.558Z",
+  "user": {
+    "uid": 1826932251,
+    "name": "雪狐故",
+    "face": "https://i0.hdslb.com/bfs/face/c60783200fc1f4a47e98ab30142fa1fbe4ca7f1e.jpg",
+    "sign": "",
+    "fans": 128,
+    "following": 269,
+    "url": "https://space.bilibili.com/1826932251"
+  },
+  "stats": {
+    "videoCount": 6,
+    "totalPlay": 1832,
+    "totalDanmaku": 1,
+    "totalComment": 15
+  },
+  "videos": [
+    {
+      "bvid": "BV11mxk6hEfe",
+      "title": "【雪狐故】最新视频已上线，快来围观！",
+      "cover": "https://i2.hdslb.com/bfs/archive/937f63ded58c88935a3a72cc47320c25a4fdabe6.jpg@480w_270h_1c.webp",
+      "play": 22,
+      "danmaku": 0,
+      "comment": 0,
+      "duration": "00:50",
+      "created": "2026-10-31T09:12:40.000Z",
+      "url": "https://www.bilibili.com/video/BV11mxk6hEfe"
+    },
+    {
+      "bvid": "BV1xmxk6hED2",
+      "title": "这波360°漂移过弯",
+      "cover": "https://i1.hdslb.com/bfs/archive/cd5ab1b551fdc0194301f9587337d1268940e43f.jpg@480w_270h_1c.webp",
+      "play": 54,
+      "danmaku": 0,
+      "comment": 3,
+      "duration": "00:13",
+      "created": "2026-10-31T09:11:40.000Z",
+      "url": "https://www.bilibili.com/video/BV1xmxk6hED2"
+    },
+    {
+      "bvid": "BV1gJxC6zEnY",
+      "title": "两台大运并驾齐驱！！！",
+      "cover": "https://i1.hdslb.com/bfs/archive/e6b90189992539ae2f2b0c5516f89ab208472856.jpg@480w_270h_1c.webp",
+      "play": 38,
+      "danmaku": 0,
+      "comment": 0,
+      "duration": "00:39",
+      "created": "2026-10-31T09:08:41.000Z",
+      "url": "https://www.bilibili.com/video/BV1gJxC6zEnY"
+    },
+    {
+      "bvid": "BV1XSMr6bEf4",
+      "title": "孙权劝学（澜权）",
+      "cover": "https://i2.hdslb.com/bfs/archive/008ffc4b722fa12b795641021639338dcb1db4ad.jpg@480w_270h_1c.webp",
+      "play": 1097,
+      "danmaku": 0,
+      "comment": 6,
+      "duration": "00:20",
+      "created": "2026-08-05T00:33:24.000Z",
+      "url": "https://www.bilibili.com/video/BV1XSMr6bEf4"
+    },
+    {
+      "bvid": "BV1FUeczuEVa",
+      "title": "我算出了大世界核爆300万的白厄？？？",
+      "cover": "https://i1.hdslb.com/bfs/archive/bfa2bb347e759abe4e524e3c41708d889d39b808.jpg@480w_270h_1c.webp",
+      "play": 166,
+      "danmaku": 1,
+      "comment": 1,
+      "duration": "01:43",
+      "created": "2025-08-19T05:45:30.000Z",
+      "url": "https://www.bilibili.com/video/BV1FUeczuEVa"
+    },
+    {
+      "bvid": "BV1fkXQYSERb",
+      "title": "咱们忍三玩家也是吃上谷子了",
+      "cover": "https://i1.hdslb.com/bfs/archive/bda83dec1f7080969bf245eb607d3dfd33079306.jpg@480w_270h_1c.webp",
+      "play": 455,
+      "danmaku": 0,
+      "comment": 5,
+      "duration": "00:30",
+      "created": "2025-03-01T04:37:50.000Z",
+      "url": "https://www.bilibili.com/video/BV1fkXQYSERb"
+    }
+  ],
+  "favorites": []
+}

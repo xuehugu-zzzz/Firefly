@@ -36,7 +36,12 @@ jobs:
           
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
-      
+
+      # 构建前抓取 B 站最新数据；抓取失败会沿用仓库里已有的 src/data/bilibili.json
+      - name: Fetch Bilibili data
+        run: node scripts/fetch-bilibili.mjs
+        continue-on-error: true
+
       - name: Build site
         run: pnpm run build
 

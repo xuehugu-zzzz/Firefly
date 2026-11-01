@@ -42,6 +42,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		url: "#",
 		icon: "material-symbols:person",
 		children: [
+			// 我的B站
+			LinkPresets.Bilibili,
+
 			// 相册
 			LinkPresets.Gallery,
 
@@ -125,6 +128,11 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/gallery/",
 		icon: "material-symbols:photo-library",
 		pageKey: "gallery",
+	},
+	Bilibili: {
+		name: "我的B站",
+		url: "/bilibili/",
+		icon: "material-symbols:smart-display",
 	},
 };
 
