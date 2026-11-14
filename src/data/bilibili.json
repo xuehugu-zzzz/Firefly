@@ -1,6 +1,6 @@
 {
   "uid": 1826932251,
-  "fetchedAt": "2026-11-13T13:50:31.159Z",
+  "fetchedAt": "2026-11-14T04:40:47.936Z",
   "user": {
     "uid": 1826932251,
     "name": "雪狐故",
@@ -13,8 +13,8 @@
   "stats": {
     "videoCount": 6,
     "totalPlay": 1886,
-    "totalDanmaku": 0,
-    "totalComment": 0,
+    "totalDanmaku": 1,
+    "totalComment": 15,
     "favFolderCount": 20
   },
   "videos": [
@@ -25,7 +25,7 @@
       "play": 22,
       "danmaku": 0,
       "comment": 0,
-      "duration": "50",
+      "duration": "00:50",
       "created": "2026-10-31T09:12:40.000Z",
       "url": "https://www.bilibili.com/video/BV11mxk6hEfe"
     },
@@ -35,8 +35,8 @@
       "cover": "https://i1.hdslb.com/bfs/archive/cd5ab1b551fdc0194301f9587337d1268940e43f.jpg@480w_270h_1c.webp",
       "play": 95,
       "danmaku": 0,
-      "comment": 0,
-      "duration": "13",
+      "comment": 3,
+      "duration": "00:13",
       "created": "2026-10-31T09:11:40.000Z",
       "url": "https://www.bilibili.com/video/BV1xmxk6hED2"
     },
@@ -47,7 +47,7 @@
       "play": 39,
       "danmaku": 0,
       "comment": 0,
-      "duration": "39",
+      "duration": "00:39",
       "created": "2026-10-31T09:08:41.000Z",
       "url": "https://www.bilibili.com/video/BV1gJxC6zEnY"
     },
@@ -57,8 +57,8 @@
       "cover": "https://i2.hdslb.com/bfs/archive/008ffc4b722fa12b795641021639338dcb1db4ad.jpg@480w_270h_1c.webp",
       "play": 1109,
       "danmaku": 0,
-      "comment": 0,
-      "duration": "20",
+      "comment": 6,
+      "duration": "00:20",
       "created": "2026-08-05T00:33:24.000Z",
       "url": "https://www.bilibili.com/video/BV1XSMr6bEf4"
     },
@@ -67,9 +67,9 @@
       "title": "我算出了大世界核爆300万的白厄？？？",
       "cover": "https://i1.hdslb.com/bfs/archive/bfa2bb347e759abe4e524e3c41708d889d39b808.jpg@480w_270h_1c.webp",
       "play": 166,
-      "danmaku": 0,
-      "comment": 0,
-      "duration": "103",
+      "danmaku": 1,
+      "comment": 1,
+      "duration": "01:43",
       "created": "2025-08-19T05:45:30.000Z",
       "url": "https://www.bilibili.com/video/BV1FUeczuEVa"
     },
@@ -79,8 +79,8 @@
       "cover": "https://i1.hdslb.com/bfs/archive/bda83dec1f7080969bf245eb607d3dfd33079306.jpg@480w_270h_1c.webp",
       "play": 455,
       "danmaku": 0,
-      "comment": 0,
-      "duration": "30",
+      "comment": 5,
+      "duration": "00:30",
       "created": "2025-03-01T04:37:50.000Z",
       "url": "https://www.bilibili.com/video/BV1fkXQYSERb"
     }
@@ -106,7 +106,7 @@
           "title": "全网最细！40分钟速通Codex！【GenJi深度教程】",
           "cover": "https://i2.hdslb.com/bfs/archive/bf9d8a7ba3ae53aafc69b470adbc5c8f8c3e615e.jpg@480w_270h_1c.webp",
           "upper": "GenJi是真想教会你",
-          "play": 634181,
+          "play": 649500,
           "duration": 2252,
           "url": "https://www.bilibili.com/video/BV1tTxd6KEeL"
         },
@@ -115,7 +115,7 @@
           "title": "深圳17岁高中生，入职硅谷顶尖团队！AI公司疯抢00、10后！",
           "cover": "https://i2.hdslb.com/bfs/archive/3bb956614a68cd24a1ef8714201c1c973639a104.jpg@480w_270h_1c.webp",
           "upper": "科技资本论",
-          "play": 330030,
+          "play": 333679,
           "duration": 279,
           "url": "https://www.bilibili.com/video/BV1xrnz6gEJS"
         },
@@ -124,7 +124,7 @@
           "title": "当你的ai上下文要满了之后",
           "cover": "https://i0.hdslb.com/bfs/archive/87f3d762de3ed3588546010124e652cacaea6d5f.jpg@480w_270h_1c.webp",
           "upper": "超金属爆裂",
-          "play": 310757,
+          "play": 319844,
           "duration": 130,
           "url": "https://www.bilibili.com/video/BV1xyx764E5d"
         },
@@ -133,7 +133,7 @@
           "title": "流浪者星扩散实战！散奥无伤双通深渊12层下半",
           "cover": "https://i1.hdslb.com/bfs/archive/adc67cca0a7448f0d868b3405ce9572a3f0a5941.jpg@480w_270h_1c.webp",
           "upper": "念南韵",
-          "play": 41360,
+          "play": 41366,
           "duration": 251,
           "url": "https://www.bilibili.com/video/BV16zgW6FEXi"
         },
@@ -142,7 +142,7 @@
           "title": "关于流浪者星扩散加强",
           "cover": "https://i0.hdslb.com/bfs/archive/e2b7df44ff4ae3238f42cc1b8ba7e7230f5f808c.jpg@480w_270h_1c.webp",
           "upper": "颜色大作-龙蓝",
-          "play": 56519,
+          "play": 56522,
           "duration": 220,
           "url": "https://www.bilibili.com/video/BV1pfgs6KEVA"
         },
@@ -151,7 +151,7 @@
           "title": "【原神】惊天反转！沙楼套并非散兵最强圣遗物？理论+实测告诉你散兵圣遗物的「最优解」",
           "cover": "https://i1.hdslb.com/bfs/archive/ba6f9bf4f21a2fba3b2113b657c0a501355b649f.jpg@480w_270h_1c.webp",
           "upper": "在下冲锋丘丘人",
-          "play": 915113,
+          "play": 915118,
           "duration": 584,
           "url": "https://www.bilibili.com/video/BV1wW4y1K7Ea"
         },
@@ -160,7 +160,7 @@
           "title": "重复的事交给 BetterGI，旅途的风景留给你",
           "cover": "https://i1.hdslb.com/bfs/archive/0f383433a5e55320c84ce7527df1120dd6b04a2f.jpg@480w_270h_1c.webp",
           "upper": "BetterGI",
-          "play": 261393,
+          "play": 261845,
           "duration": 120,
           "url": "https://www.bilibili.com/video/BV1HDpJ6JEnK"
         },
@@ -169,7 +169,7 @@
           "title": "超详细的DSH安装和插件整合视频，从零带你玩转DSH",
           "cover": "https://i2.hdslb.com/bfs/archive/10bcb342d9efef9a02628346e8c34a6365c4aeb1.jpg@480w_270h_1c.webp",
           "upper": "duan在时光走廊i05",
-          "play": 522263,
+          "play": 523176,
           "duration": 627,
           "url": "https://www.bilibili.com/video/BV1SgnS63EoH"
         },
@@ -178,7 +178,7 @@
           "title": "喜欢一个人要不要先表白？诺奖级的数学给出了答案",
           "cover": "https://i1.hdslb.com/bfs/archive/a7735485e1f81e13e05ae2f1ea0b4164837c7d1f.jpg@480w_270h_1c.webp",
           "upper": "喜欢有解",
-          "play": 110294,
+          "play": 110388,
           "duration": 193,
           "url": "https://www.bilibili.com/video/BV1ZpJt6fEdw"
         },
@@ -187,7 +187,7 @@
           "title": "“上大学该谈个女朋友了”。我呀？我去谈恋爱啊？！那无敌了……",
           "cover": "https://i0.hdslb.com/bfs/archive/173f1ebfb9a8c60a8c426728a6c5aedbeb2f678c.jpg@480w_270h_1c.webp",
           "upper": "个大活人",
-          "play": 6626588,
+          "play": 6634013,
           "duration": 127,
           "url": "https://www.bilibili.com/video/BV1uvpg6zEdw"
         },
@@ -196,7 +196,7 @@
           "title": "DeepSeek 才是真的 OpenAI：一期带你看懂其最新开源的推理框架 DeepInfer",
           "cover": "https://i1.hdslb.com/bfs/archive/c0b27fb93af83cd3c1cf5aed867ea0a948837bc5.jpg@480w_270h_1c.webp",
           "upper": "code秘密花园",
-          "play": 376900,
+          "play": 378278,
           "duration": 1055,
           "url": "https://www.bilibili.com/video/BV1DmnB6jEGu"
         },
@@ -205,7 +205,7 @@
           "title": "你这一生会和很多条线相交，但没有一条能陪你走到最后",
           "cover": "https://i2.hdslb.com/bfs/archive/ca799cc7137dd749cb93b153b63e8dbb0fc7e465.jpg@480w_270h_1c.webp",
           "upper": "阿猪的人生公式",
-          "play": 1177174,
+          "play": 1190353,
           "duration": 94,
           "url": "https://www.bilibili.com/video/BV1BFnc69Edn"
         },
@@ -214,7 +214,7 @@
           "title": "什么？你的肥鱼还不会自己打游戏",
           "cover": "https://i2.hdslb.com/bfs/archive/4c015fff5847a6349128c0cf9ac50e1e7ff21b78.jpg@480w_270h_1c.webp",
           "upper": "大肥鱼打游戏",
-          "play": 135374,
+          "play": 137380,
           "duration": 150,
           "url": "https://www.bilibili.com/video/BV16Axe6bEhh"
         },
@@ -223,7 +223,7 @@
           "title": "【全网首发】一个有“自主意识”的DeepSeek插件",
           "cover": "https://i0.hdslb.com/bfs/archive/869a68758c5b91b9c614b044141ca52a0f3a5513.jpg@480w_270h_1c.webp",
           "upper": "玛露Marrow",
-          "play": 837254,
+          "play": 842024,
           "duration": 936,
           "url": "https://www.bilibili.com/video/BV1Rbxg6WER5"
         },
@@ -232,7 +232,7 @@
           "title": "【异环】一分钟让你知道半港区漂移的快乐～",
           "cover": "https://i0.hdslb.com/bfs/archive/077c8da2ed61d0ac59f10955b4269b2ec91665e8.jpg@480w_270h_1c.webp",
           "upper": "锅了个锅zyi",
-          "play": 58187,
+          "play": 58396,
           "duration": 74,
           "url": "https://www.bilibili.com/video/BV1EgnU6pEfV"
         },
@@ -241,7 +241,7 @@
           "title": "意识形态怎样影响着我们，我用小猫给你解释一下",
           "cover": "https://i1.hdslb.com/bfs/archive/510d75476e6f81fe3ae990421db673a3a16eef61.jpg@480w_270h_1c.webp",
           "upper": "猫的哲学",
-          "play": 67119,
+          "play": 68007,
           "duration": 101,
           "url": "https://www.bilibili.com/video/BV1ggHG66EaL"
         },
@@ -250,7 +250,7 @@
           "title": "用真实阴影做一款电子游戏",
           "cover": "https://i0.hdslb.com/bfs/archive/18b90cd26ddccdfa39739c5be06000badff336ff.jpg@480w_270h_1c.webp",
           "upper": "Toaster_ok",
-          "play": 4439397,
+          "play": 4439611,
           "duration": 49,
           "url": "https://www.bilibili.com/video/BV1msHE6sEde"
         },
@@ -259,7 +259,7 @@
           "title": "全球首支 mRNA 癌症疫苗临床试验成功，人类抗癌里程碑！",
           "cover": "https://i0.hdslb.com/bfs/archive/d5e88febdd82c2d2fb58bfb3820275cf9f366fad.jpg@480w_270h_1c.webp",
           "upper": "耿同学讲故事",
-          "play": 664830,
+          "play": 665204,
           "duration": 301,
           "url": "https://www.bilibili.com/video/BV1tB8d6SEBV"
         },
@@ -268,7 +268,7 @@
           "title": "单卡性能仅英伟达十二分之一，华为凭什么把老黄中国份额打到归零？",
           "cover": "https://i2.hdslb.com/bfs/archive/2ca9e8690f9963db53ce3d7592f6a1a838205012.jpg@480w_270h_1c.webp",
           "upper": "智视界AI时代",
-          "play": 275799,
+          "play": 279099,
           "duration": 1530,
           "url": "https://www.bilibili.com/video/BV1AgpG6eEQC"
         }
@@ -286,7 +286,7 @@
           "title": "菜谱：洋葱炒蛋，家庭红烧鱼，蒜炒西兰花，辣椒炒猪腰，绿豆汤，从买菜开始，你在家随时可以复刻",
           "cover": "https://i2.hdslb.com/bfs/archive/36252dff1783102ceccd1a3cc512d39360850f07.jpg@480w_270h_1c.webp",
           "upper": "阿蔡美食雕刻",
-          "play": 9484991,
+          "play": 9487086,
           "duration": 567,
           "url": "https://www.bilibili.com/video/BV1BS876oEwP"
         }
@@ -304,7 +304,7 @@
           "title": "当我在MC中把反乌托邦、拼接遗憾和Sinos De Natal融合在了一起...?",
           "cover": "https://i2.hdslb.com/bfs/archive/9ed0f005a4fe8b7a064d0a046178b2640fb2a19b.jpg@480w_270h_1c.webp",
           "upper": "Vince丷",
-          "play": 11780460,
+          "play": 11796804,
           "duration": 130,
           "url": "https://www.bilibili.com/video/BV1RZ786dEot"
         },
@@ -313,7 +313,7 @@
           "title": "《反乌托邦Pt.1》洛天依.ver",
           "cover": "https://i2.hdslb.com/bfs/archive/3347a41609a2c8dd6c64188fd56a3f6800dce612.jpg@480w_270h_1c.webp",
           "upper": "鬼面P",
-          "play": 608201,
+          "play": 609110,
           "duration": 153,
           "url": "https://www.bilibili.com/video/BV1Nj3y68Ewj"
         },
@@ -322,7 +322,7 @@
           "title": "【星尘/诗岸/原创摇滚】反乌托邦 “至少我还在为你而歌唱，在黑暗漫长的反乌托邦”",
           "cover": "https://i1.hdslb.com/bfs/archive/21f605ad8763ef8226a5eb50e9ab59cc06c32f02.jpg@480w_270h_1c.webp",
           "upper": "Utopia_乌托邦P",
-          "play": 20464632,
+          "play": 20480565,
           "duration": 153,
           "url": "https://www.bilibili.com/video/BV1CVPoeNEq4"
         },
@@ -331,7 +331,7 @@
           "title": "【洛天依原创】MONTAGEM PITTY",
           "cover": "https://i2.hdslb.com/bfs/archive/b432b3fb40482a6fdedae3f44e6cf8746608bd20.jpg@480w_270h_1c.webp",
           "upper": "见过夏天P",
-          "play": 9054185,
+          "play": 9059140,
           "duration": 99,
           "url": "https://www.bilibili.com/video/BV1mBwNzUEAX"
         },
@@ -340,7 +340,7 @@
           "title": "【洛天依原创】我的悲伤是水做的",
           "cover": "https://i2.hdslb.com/bfs/archive/397e47e4241cd175a2af026dc0be78c688f230dd.jpg@480w_270h_1c.webp",
           "upper": "YuH_ChiliChill",
-          "play": 14408858,
+          "play": 14416513,
           "duration": 227,
           "url": "https://www.bilibili.com/video/BV1Qc411h7Ys"
         },
@@ -349,7 +349,7 @@
           "title": "“请予我无垠长夜一束光。”《极星流浪夜》【星尘/永夜原创】【2024虚拟歌手贺岁纪单品】",
           "cover": "https://i2.hdslb.com/bfs/archive/3d1022444db8342c9d6984a435576ee77ef5a510.jpg@480w_270h_1c.webp",
           "upper": "被遗忘者的哀伤",
-          "play": 772324,
+          "play": 772568,
           "duration": 226,
           "url": "https://www.bilibili.com/video/BV1sZ421z7db"
         }
@@ -367,7 +367,7 @@
           "title": "【钢琴】『与你相恋到生命尽头』OP 「Amore」/ ReoNa",
           "cover": "https://i2.hdslb.com/bfs/archive/baf5bc5b35b8caddf2d3139b82e3e0f38d90f7a5.jpg@480w_270h_1c.webp",
           "upper": "HalcyonMusic官方",
-          "play": 21818,
+          "play": 21867,
           "duration": 289,
           "url": "https://www.bilibili.com/video/BV1SbK563E97"
         },
@@ -376,7 +376,7 @@
           "title": "【中日字幕/ReoNa/OP完整】与你相恋到生命尽头 OP「Amore」/ ReoNa【无损音质】",
           "cover": "https://i2.hdslb.com/bfs/archive/3b9eadf6bb13d37c3acc3f79c2458a315c93bd45.jpg@480w_270h_1c.webp",
           "upper": "百億_光年",
-          "play": 82382,
+          "play": 82503,
           "duration": 276,
           "url": "https://www.bilibili.com/video/BV1bqMh6ZER5"
         }
@@ -394,7 +394,7 @@
           "title": "《原神》过场动画-「若我们再次相见」",
           "cover": "https://i1.hdslb.com/bfs/archive/a4f2c1bfb51946bb0e8765c6eb51a2d22c6e76c6.jpg@480w_270h_1c.webp",
           "upper": "原神",
-          "play": 3423605,
+          "play": 3426898,
           "duration": 403,
           "url": "https://www.bilibili.com/video/BV1JvME66Eej"
         },
@@ -421,7 +421,7 @@
           "title": "⚡️当我用13本变身百合填了一首《栖凰》⚡️",
           "cover": "https://i0.hdslb.com/bfs/archive/2e3579b918a0788680767b32c3ef87172537e728.jpg@480w_270h_1c.webp",
           "upper": "宁静Claire",
-          "play": 19422,
+          "play": 19437,
           "duration": 204,
           "url": "https://www.bilibili.com/video/BV1BFfgBgEW4"
         },
@@ -439,7 +439,7 @@
           "title": "只属于两个人的结局",
           "cover": "https://i2.hdslb.com/bfs/archive/565cf5c4a6691f8597225e85512e394ef1689685.jpg@480w_270h_1c.webp",
           "upper": "北柚橙_",
-          "play": 4457,
+          "play": 4460,
           "duration": 77,
           "url": "https://www.bilibili.com/video/BV1mzikBpEuL"
         }
@@ -457,7 +457,7 @@
           "title": "“到底要在我的野区干什么？！”",
           "cover": "https://i0.hdslb.com/bfs/archive/c2909e31294749507cd7ad71d702ca234b192996.jpg@480w_270h_1c.webp",
           "upper": "超强岑青",
-          "play": 124423,
+          "play": 124563,
           "duration": 18,
           "url": "https://www.bilibili.com/video/BV1DV7Y6WEaG"
         },
@@ -466,7 +466,7 @@
           "title": "澜:此乃“孙权劝学”？有够真实的！",
           "cover": "https://i2.hdslb.com/bfs/archive/2b58286ab013aec4dbfda36554d83d5cd312d45f.jpg@480w_270h_1c.webp",
           "upper": "王者鲁班君",
-          "play": 2913195,
+          "play": 2913231,
           "duration": 422,
           "url": "https://www.bilibili.com/video/BV1UButzYEXb"
         },
@@ -475,7 +475,7 @@
           "title": "【文化社会学】为什么磕CP比自己谈恋爱还上头？论当代资本主义的欲望抵抗学",
           "cover": "https://i2.hdslb.com/bfs/archive/7849aee2ba887197db6dd5d83118d46cc403faa0.jpg@480w_270h_1c.webp",
           "upper": "学院派Academia",
-          "play": 870033,
+          "play": 870220,
           "duration": 1341,
           "url": "https://www.bilibili.com/video/BV1gYAFzrEBk"
         },
@@ -484,7 +484,7 @@
           "title": "《孙权劝学》",
           "cover": "https://i0.hdslb.com/bfs/archive/bac7d960749f226b0d0cc7b0dc7583232da5bd76.jpg@480w_270h_1c.webp",
           "upper": "左左丞相",
-          "play": 895627,
+          "play": 895711,
           "duration": 67,
           "url": "https://www.bilibili.com/video/BV1wh3EzNECo"
         },
@@ -493,7 +493,7 @@
           "title": "《孙权劝一切》1.0",
           "cover": "https://i0.hdslb.com/bfs/archive/a5781030d1532da962b0e8fd0ed5e6d350878546.jpg@480w_270h_1c.webp",
           "upper": "落窜窜",
-          "play": 706750,
+          "play": 706806,
           "duration": 73,
           "url": "https://www.bilibili.com/video/BV1mTGEzCEJP"
         },
@@ -502,7 +502,7 @@
           "title": "孙权喊停，澜会停下吗？",
           "cover": "https://i2.hdslb.com/bfs/archive/ebf0a9904c3e92f0e0118865b2b440e751f89ac8.jpg@480w_270h_1c.webp",
           "upper": "小菠萝鸭哈",
-          "play": 41828,
+          "play": 41835,
           "duration": 16,
           "url": "https://www.bilibili.com/video/BV1ijAXzAEEw"
         },
@@ -511,7 +511,7 @@
           "title": "王者CG巅峰之作的后续故事终于来了！",
           "cover": "https://i1.hdslb.com/bfs/archive/151526ea35279259f18aaf7b2bff994690787ac7.jpg@480w_270h_1c.webp",
           "upper": "极光的王者世界",
-          "play": 162136,
+          "play": 162152,
           "duration": 125,
           "url": "https://www.bilibili.com/video/BV1UGGpzdERq"
         },
@@ -520,7 +520,7 @@
           "title": "孙权PV《远谋》上线！",
           "cover": "https://i1.hdslb.com/bfs/archive/a852f5599216aa8a4d38000c928732c1127a9427.jpg@480w_270h_1c.webp",
           "upper": "王者荣耀",
-          "play": 688575,
+          "play": 688722,
           "duration": 302,
           "url": "https://www.bilibili.com/video/BV1s833zQEHN"
         },
@@ -529,7 +529,7 @@
           "title": "孙权英雄CG《钓》—— 少年江中钓，轻拨万重浪",
           "cover": "https://i0.hdslb.com/bfs/archive/01437b8ebc610f88e8c1d6210f14fa57eedf3385.jpg@480w_270h_1c.webp",
           "upper": "王者荣耀",
-          "play": 2087693,
+          "play": 2087986,
           "duration": 224,
           "url": "https://www.bilibili.com/video/BV1rb38zNEZb"
         }
@@ -556,7 +556,7 @@
           "title": "【城】10 分钟，教你用 AI 做科普动画 | 模板开源，开箱即用",
           "cover": "https://i0.hdslb.com/bfs/archive/d26cf42514b5d7e0c87f1d921e4f597d9f9202a9.jpg@480w_270h_1c.webp",
           "upper": "网络小白_Uncle城",
-          "play": 261052,
+          "play": 261065,
           "duration": 849,
           "url": "https://www.bilibili.com/video/BV1AeDmBAEYm"
         },
@@ -565,7 +565,7 @@
           "title": "5年153期视频，我的科普视频制作全流程大公开",
           "cover": "https://i2.hdslb.com/bfs/archive/48a50053aa018eff9c41feb06632818799aa2c1a.jpg@480w_270h_1c.webp",
           "upper": "做视频的洛唐",
-          "play": 191164,
+          "play": 191240,
           "duration": 351,
           "url": "https://www.bilibili.com/video/BV1NprhBPEtR"
         },
@@ -574,7 +574,7 @@
           "title": "动漫片段角色ai替换教程",
           "cover": "https://i2.hdslb.com/bfs/archive/d0fec5ce7e57f428e6c3bcf1803be2f311eccf3a.jpg@480w_270h_1c.webp",
           "upper": "账号星球官方",
-          "play": 129178,
+          "play": 129401,
           "duration": 217,
           "url": "https://www.bilibili.com/video/BV1r8MD6PE3N"
         }
@@ -592,7 +592,7 @@
           "title": "【数学】四个运算，撑起整个ChatGPT | 算法的数学基础 05",
           "cover": "https://i0.hdslb.com/bfs/archive/e54b0b142cb11daead6957f836e4c29c1c6c2a01.jpg@480w_270h_1c.webp",
           "upper": "过拟合青年",
-          "play": 37127,
+          "play": 37135,
           "duration": 1129,
           "url": "https://www.bilibili.com/video/BV1HqDiBhEGc"
         },
@@ -601,7 +601,7 @@
           "title": "手把手教你上线网站，不用服务器！小白可懂",
           "cover": "https://i0.hdslb.com/bfs/archive/9c7b5af2a9bd9605b889f62dfd56ca8fac386764.jpg@480w_270h_1c.webp",
           "upper": "程序员鱼皮",
-          "play": 248065,
+          "play": 248074,
           "duration": 471,
           "url": "https://www.bilibili.com/video/BV1UZ4y197i1"
         },
@@ -610,7 +610,7 @@
           "title": "如何搭建免费动态网站",
           "cover": "https://i1.hdslb.com/bfs/archive/289ed39b4d28cec84da7aa0e59143806bff4b37a.jpg@480w_270h_1c.webp",
           "upper": "木佐凪樹",
-          "play": 6562,
+          "play": 6564,
           "duration": 243,
           "url": "https://www.bilibili.com/video/BV1Xs411D7mG"
         },
@@ -619,7 +619,7 @@
           "title": "【建议收藏】win11优化设置指南！让你的电脑干净又流畅，windows11设置教程",
           "cover": "https://i0.hdslb.com/bfs/archive/3a5b659fb0e98be2149b859986cdcfdd7619f48f.jpg@480w_270h_1c.webp",
           "upper": "戴同学啥都玩",
-          "play": 873372,
+          "play": 873740,
           "duration": 456,
           "url": "https://www.bilibili.com/video/BV1FwVNzeEXG"
         },
@@ -628,7 +628,7 @@
           "title": "正在学AI的大学生，比我们还焦虑",
           "cover": "https://i2.hdslb.com/bfs/archive/01900a833700bc6fbd9573bdcf9d7dda593b74d8.jpg@480w_270h_1c.webp",
           "upper": "差评前沿部",
-          "play": 158659,
+          "play": 158683,
           "duration": 394,
           "url": "https://www.bilibili.com/video/BV1riDsBaE8H"
         },
@@ -646,7 +646,7 @@
           "title": "一分钟看懂电路板",
           "cover": "https://i2.hdslb.com/bfs/archive/977bdaca795d8eb005c8e828b8a1debf1c029be0.jpg@480w_270h_1c.webp",
           "upper": "王亮_1024编程实验室",
-          "play": 747932,
+          "play": 747991,
           "duration": 100,
           "url": "https://www.bilibili.com/video/BV13J4m1A7tW"
         },
@@ -655,7 +655,7 @@
           "title": "第06课 单片机最小系统的电路设计",
           "cover": "https://i1.hdslb.com/bfs/archive/fb8eaadd98c06c6507510d31c1776bd849c067d0.jpg@480w_270h_1c.webp",
           "upper": "爱上半导体",
-          "play": 4233,
+          "play": 4237,
           "duration": 1749,
           "url": "https://www.bilibili.com/video/BV19JQqBREdy"
         },
@@ -664,7 +664,7 @@
           "title": "开源音乐播放器 ECHO1.3.7 超绝アップデート！",
           "cover": "https://i2.hdslb.com/bfs/archive/cbbf048b54767c08c6f7523e4929f6f0f91683e5.jpg@480w_270h_1c.webp",
           "upper": "ミカ的瑞士卷卷",
-          "play": 82611,
+          "play": 82634,
           "duration": 110,
           "url": "https://www.bilibili.com/video/BV1G2RsB8EGN"
         },
@@ -673,7 +673,7 @@
           "title": "十分钟学会编程的本质【收藏级】",
           "cover": "https://i1.hdslb.com/bfs/archive/829f41311fd8a0a67502fe9ba3e891cf2c49e0c9.jpg@480w_270h_1c.webp",
           "upper": "康文昌",
-          "play": 2120150,
+          "play": 2120399,
           "duration": 699,
           "url": "https://www.bilibili.com/video/BV1AF411s78P"
         },
@@ -682,7 +682,7 @@
           "title": "”电子海洋“复刻教程来啦！",
           "cover": "https://i1.hdslb.com/bfs/archive/e564640270e83bcc94171bc73c890edf5ce923b6.jpg@480w_270h_1c.webp",
           "upper": "好心却黑猫35",
-          "play": 291683,
+          "play": 291766,
           "duration": 1492,
           "url": "https://www.bilibili.com/video/BV1UDXhBPEod"
         },
@@ -691,7 +691,7 @@
           "title": "搭建一个自己的网站？看这个就够了！",
           "cover": "https://i1.hdslb.com/bfs/archive/ff526cfa6a6239d3aca61edd1c614666d9f2cc01.jpg@480w_270h_1c.webp",
           "upper": "小枫社长",
-          "play": 1310082,
+          "play": 1310210,
           "duration": 3127,
           "url": "https://www.bilibili.com/video/BV16A4y1X7vg"
         },
@@ -709,7 +709,7 @@
           "title": "制作并上传免费网站！| Freevian 000.1",
           "cover": "https://i1.hdslb.com/bfs/archive/683bb2f8ff871e0a04f6412d71803307a0fd70f4.jpg@480w_270h_1c.webp",
           "upper": "Freevian",
-          "play": 61900,
+          "play": 61918,
           "duration": 679,
           "url": "https://www.bilibili.com/video/BV1TCMvzJEtp"
         },
@@ -718,7 +718,7 @@
           "title": "为什么你要“编”程？今天课本里的这些词，竟然都来自纺织的动作【花生】",
           "cover": "https://i0.hdslb.com/bfs/archive/c1fbef75546f721edc2d9d3ffd739f76cb4e9bfa.jpg@480w_270h_1c.webp",
           "upper": "宋宁世Neise",
-          "play": 65556,
+          "play": 65558,
           "duration": 631,
           "url": "https://www.bilibili.com/video/BV17k5x66Eyq"
         },
@@ -727,7 +727,7 @@
           "title": "手把手带你从0搭建个人网站，小白可懂的保姆级教程 |  2种方法让你拥有个人博客，程序员自学编程必备",
           "cover": "https://i0.hdslb.com/bfs/archive/b9f569d7a51b825814a905ebc447edf602689026.jpg@480w_270h_1c.webp",
           "upper": "程序员鱼皮",
-          "play": 835440,
+          "play": 835443,
           "duration": 519,
           "url": "https://www.bilibili.com/video/BV1rU4y1J785"
         },
@@ -736,7 +736,7 @@
           "title": "十分钟速通遥控教程2-对码",
           "cover": "https://i1.hdslb.com/bfs/archive/e8948e2fbade7287e599a47483a17af9dc4c5adb.jpg@480w_270h_1c.webp",
           "upper": "晏工搞机",
-          "play": 4953,
+          "play": 4957,
           "duration": 558,
           "url": "https://www.bilibili.com/video/BV13NQfB1E8x"
         },
@@ -745,7 +745,7 @@
           "title": "4小时学会计算机基础 零基础学习计算机（纯干货）+ 2024Linux基础全套课程",
           "cover": "https://i2.hdslb.com/bfs/archive/020a19208df44a986b6ecd0a6d860f463a28202f.png@480w_270h_1c.webp",
           "upper": "IT先驱者",
-          "play": 1953031,
+          "play": 1953299,
           "duration": 28940,
           "url": "https://www.bilibili.com/video/BV1aA411x7Us"
         },
@@ -763,7 +763,7 @@
           "title": "大厂做不到的丝滑？我实现了桌宠做任务的实时链路，让桌宠告别“人工智障式沉默”【StreamPet 第二期】【B站AI创造公开赛】",
           "cover": "https://i2.hdslb.com/bfs/archive/526041354de3fd9340040de777e2a41cebba0d34.jpg@480w_270h_1c.webp",
           "upper": "小柳技术日记",
-          "play": 8087,
+          "play": 8089,
           "duration": 246,
           "url": "https://www.bilibili.com/video/BV1yZT96mE6t"
         }
@@ -781,7 +781,7 @@
           "title": "关系越稳定，为什么越没感觉？",
           "cover": "https://i0.hdslb.com/bfs/archive/55a95d204552859558e98f28dbd2f632b59a1b81.jpg@480w_270h_1c.webp",
           "upper": "好奇的珜",
-          "play": 189463,
+          "play": 189681,
           "duration": 184,
           "url": "https://www.bilibili.com/video/BV1U93x6HE4p"
         },
@@ -790,7 +790,7 @@
           "title": "信任并不是靠反复解释建立的，亲密关系里的分寸感，本该是一种自觉，而不是感到被束缚所作出的妥协",
           "cover": "https://i2.hdslb.com/bfs/archive/3efd3c470af04aa78d4a4cdddaeecc705f914bbd.jpg@480w_270h_1c.webp",
           "upper": "愈霓yuni",
-          "play": 20142,
+          "play": 20173,
           "duration": 403,
           "url": "https://www.bilibili.com/video/BV1YtNg6aEYo"
         }
@@ -817,7 +817,7 @@
           "title": "【原神】奥黛塔+阿罗夏+星扩散喂饭级攻略！对木偶/莱欧/冰主/赛诺/梦见月提升有多大？",
           "cover": "https://i2.hdslb.com/bfs/archive/be3f5c0c387c520a1d25b317dfb030937fbf552d.jpg@480w_270h_1c.webp",
           "upper": "粥粥的终极理解",
-          "play": 266316,
+          "play": 266371,
           "duration": 1218,
           "url": "https://www.bilibili.com/video/BV1fKuY6SEZa"
         },
@@ -835,7 +835,7 @@
           "title": "【原神】常驻之光 首个真正意义星扩散主C？梦见月瑞希角色攻略 星扩散反应体系的输出 兼顾治疗 技能机制 武器圣遗物 配队 命座 创作体验服！",
           "cover": "https://i1.hdslb.com/bfs/archive/ec78ccdf76f3a637d5970a9e6ae954801df6ee39.jpg@480w_270h_1c.webp",
           "upper": "凉夏喵",
-          "play": 1091460,
+          "play": 1092768,
           "duration": 527,
           "url": "https://www.bilibili.com/video/BV1BQuH6JEpu"
         },
@@ -844,7 +844,7 @@
           "title": "能带三个一金队！哥伦比娅还不能算平民战神？",
           "cover": "https://i2.hdslb.com/bfs/archive/4e1faa5533de8227e18fdc231f3d17737530a486.jpg@480w_270h_1c.webp",
           "upper": "乐子仙人阿米诺",
-          "play": 41847,
+          "play": 41886,
           "duration": 163,
           "url": "https://www.bilibili.com/video/BV1e33r6KEJG"
         },
@@ -853,7 +853,7 @@
           "title": "【原神】老米送疯了！免费5星+免费4星+免费皮肤+白嫖95抽！7.0福利汇总！上半、下半各有多少原石？奥黛塔结束能囤多少抽？薇斯纳/达妮卡/沃雅妮莎/至冬女皇",
           "cover": "https://i0.hdslb.com/bfs/archive/e685bc5ce961315b71ba7078d79966ce03706ee1.jpg@480w_270h_1c.webp",
           "upper": "冰糖小堃",
-          "play": 690834,
+          "play": 690860,
           "duration": 281,
           "url": "https://www.bilibili.com/video/BV1wYGV6gEVB"
         },
@@ -862,7 +862,7 @@
           "title": "【原神】萌新都能凑齐的超强阵容，练了开荒不再痛苦！",
           "cover": "https://i1.hdslb.com/bfs/archive/a889c84083af641ed7d0273c263fa5cadc5d0ba9.jpg@480w_270h_1c.webp",
           "upper": "诺艾尔旅行者笔记",
-          "play": 187842,
+          "play": 187878,
           "duration": 120,
           "url": "https://www.bilibili.com/video/BV1sy42187WH"
         },
@@ -871,7 +871,7 @@
           "title": "跟随场景，自动换装！吹牛比！异环1.3新功能无敌了！",
           "cover": "https://i1.hdslb.com/bfs/archive/b79cb608f8853f7781dd325703cf5286eebccb23.jpg@480w_270h_1c.webp",
           "upper": "莫凡的退休生活",
-          "play": 63671,
+          "play": 63673,
           "duration": 43,
           "url": "https://www.bilibili.com/video/BV13Pu36kEgS"
         },
@@ -880,7 +880,7 @@
           "title": "梦见月瑞希，萌新向配队攻略",
           "cover": "https://i2.hdslb.com/bfs/archive/8ae8dfc88603700f0e3594c83b87176845ed24fa.jpg@480w_270h_1c.webp",
           "upper": "阿炜原神",
-          "play": 96133,
+          "play": 96188,
           "duration": 188,
           "url": "https://www.bilibili.com/video/BV1w5KWeVEbs"
         },
@@ -889,7 +889,7 @@
           "title": "什么？至冬开门大C居然是冰主？",
           "cover": "https://i1.hdslb.com/bfs/archive/dbbc90fc4422e6dd9b6cef98b71e38ed9ba31ca9.jpg@480w_270h_1c.webp",
           "upper": "莫娜摸鱼专用",
-          "play": 893739,
+          "play": 893845,
           "duration": 264,
           "url": "https://www.bilibili.com/video/BV1HouT6SEx8"
         },
@@ -898,7 +898,7 @@
           "title": "王者荣耀：为啥射手一直刷根本就赢不了？？ 射手教学",
           "cover": "https://i2.hdslb.com/bfs/archive/5b4f805c307dd8e155ea52b621b5fe6dbf374365.jpg@480w_270h_1c.webp",
           "upper": "小居王者丶",
-          "play": 1159913,
+          "play": 1161050,
           "duration": 827,
           "url": "https://www.bilibili.com/video/BV1X2jV6KEiP"
         },
@@ -907,7 +907,7 @@
           "title": "T3的热度，T0的强度",
           "cover": "https://i1.hdslb.com/bfs/archive/d8e99cbb50e4b59134b30f3c8633eac229eed7b7.jpg@480w_270h_1c.webp",
           "upper": "王者-阿陈",
-          "play": 1147272,
+          "play": 1147845,
           "duration": 87,
           "url": "https://www.bilibili.com/video/BV1HDrrBREdt"
         },
@@ -916,7 +916,7 @@
           "title": "26年了还不会联机MC？保姆级教程教你使用三种不同的联机软件！",
           "cover": "https://i1.hdslb.com/bfs/archive/1d643d4cee80af418bf86c996964daa95c1fcb61.jpg@480w_270h_1c.webp",
           "upper": "凌音AyaNeSC",
-          "play": 273601,
+          "play": 273632,
           "duration": 367,
           "url": "https://www.bilibili.com/video/BV1pY6PBmEho"
         },
@@ -925,7 +925,7 @@
           "title": "【落幕曲】看完，你也可以速通落幕曲！",
           "cover": "https://i1.hdslb.com/bfs/archive/2495da0a95ea052a49265d1bd601e6f23c25f53f.jpg@480w_270h_1c.webp",
           "upper": "T_T无悔",
-          "play": 30064,
+          "play": 30067,
           "duration": 463,
           "url": "https://www.bilibili.com/video/BV1sdDtBjE9E"
         },
@@ -934,7 +934,7 @@
           "title": "Minecraft IPv6公网联机教程：操作简单，未来已来，低延迟联机新方案！",
           "cover": "https://i1.hdslb.com/bfs/archive/202f06564897ded6cace72eb4a524f6b820518cd.jpg@480w_270h_1c.webp",
           "upper": "灭天神话_666",
-          "play": 252136,
+          "play": 252184,
           "duration": 437,
           "url": "https://www.bilibili.com/video/BV1q1NUeNEwS"
         },
@@ -943,7 +943,7 @@
           "title": "我做了一个mc联机工具",
           "cover": "https://i2.hdslb.com/bfs/archive/bbfbf310827b5604b858cc898b3a45d92b617124.jpg@480w_270h_1c.webp",
           "upper": "乖漏斗",
-          "play": 84201,
+          "play": 84202,
           "duration": 159,
           "url": "https://www.bilibili.com/video/BV1C14y1z7jT"
         },
@@ -952,7 +952,7 @@
           "title": "我的世界流畅联机，Astral2.0使用教程",
           "cover": "https://i2.hdslb.com/bfs/archive/5b93a88033d7f5d57eb0155d7f8c93d889e8ead7.jpg@480w_270h_1c.webp",
           "upper": "EMOCHAN",
-          "play": 467995,
+          "play": 468063,
           "duration": 219,
           "url": "https://www.bilibili.com/video/BV1w97PzyEkY"
         },
@@ -961,7 +961,7 @@
           "title": "《异环》流星雨，3种100%触发方法(含隐藏雨天流星)",
           "cover": "https://i1.hdslb.com/bfs/archive/ca8e736cc3461f83dd1dcad8ae90fa2e7792d5db.jpg@480w_270h_1c.webp",
           "upper": "糖糖SO",
-          "play": 23064,
+          "play": 23069,
           "duration": 94,
           "url": "https://www.bilibili.com/video/BV1rEoyBME85"
         },
@@ -970,7 +970,7 @@
           "title": "辅助离开射手一秒时：",
           "cover": "https://i1.hdslb.com/bfs/archive/26e650e517de13c8ee1721a8877710f1582fae31.jpg@480w_270h_1c.webp",
           "upper": "纸鹤故笙",
-          "play": 170171,
+          "play": 170280,
           "duration": 67,
           "url": "https://www.bilibili.com/video/BV1MK3J6cEwq"
         },
@@ -979,7 +979,7 @@
           "title": "当辅助离开我一秒就这样",
           "cover": "https://i0.hdslb.com/bfs/archive/f4d6a6993731161efee6d43e6c60fb2e3bfe7df7.jpg@480w_270h_1c.webp",
           "upper": "王者长夜",
-          "play": 304399,
+          "play": 304547,
           "duration": 17,
           "url": "https://www.bilibili.com/video/BV1xjQmBBEER"
         }
@@ -997,7 +997,7 @@
           "title": "“一个人是没办法理解身上没有的品质的”",
           "cover": "https://i0.hdslb.com/bfs/archive/8cc4c78ddef11bd2db86b9cd6d6cb6299f8b4e00.jpg@480w_270h_1c.webp",
           "upper": "乌合之众的潜意识",
-          "play": 447533,
+          "play": 447643,
           "duration": 166,
           "url": "https://www.bilibili.com/video/BV1h8uG6CEs8"
         },
@@ -1006,7 +1006,7 @@
           "title": "如何对待傻逼以及傻逼言论",
           "cover": "https://i1.hdslb.com/bfs/archive/8a2edee2b2f7089a36d8d7352ddc30c6a310c377.jpg@480w_270h_1c.webp",
           "upper": "Heshawn高中数学何帅",
-          "play": 528106,
+          "play": 528281,
           "duration": 310,
           "url": "https://www.bilibili.com/video/BV1YMKK6XEWP"
         },
@@ -1015,7 +1015,7 @@
           "title": "回归课本，吃透教材",
           "cover": "https://i2.hdslb.com/bfs/archive/d8684afa5886db15fbb676eb453fb7312cb93358.jpg@480w_270h_1c.webp",
           "upper": "X-math高中",
-          "play": 4289,
+          "play": 4295,
           "duration": 17,
           "url": "https://www.bilibili.com/video/BV18YMM6wErJ"
         },
@@ -1024,7 +1024,7 @@
           "title": "离心率到底在离谁的心，圆锥曲线第0定义，丹德林双球模型",
           "cover": "https://i0.hdslb.com/bfs/archive/41231a2f1174698e2140636531eaa609503e9c81.jpg@480w_270h_1c.webp",
           "upper": "X-math高中",
-          "play": 70184,
+          "play": 70305,
           "duration": 167,
           "url": "https://www.bilibili.com/video/BV1mGKP6GEDW"
         },
@@ -1033,7 +1033,7 @@
           "title": "2026年高考压轴题19题，六分钟硬核图解",
           "cover": "https://i1.hdslb.com/bfs/archive/a151cb64b944bb21935a5b676e86f7998acb36db.jpg@480w_270h_1c.webp",
           "upper": "X-math高中",
-          "play": 22771,
+          "play": 22784,
           "duration": 360,
           "url": "https://www.bilibili.com/video/BV14bMw66EFT"
         },
@@ -1042,7 +1042,7 @@
           "title": "3分钟构建高中物理知识框架",
           "cover": "https://i0.hdslb.com/bfs/archive/acb189bbe115ee34c8f399c3d30ac3959a27552c.jpg@480w_270h_1c.webp",
           "upper": "物理云学习逸迭Eddie",
-          "play": 384878,
+          "play": 384953,
           "duration": 230,
           "url": "https://www.bilibili.com/video/BV1wj411P7AZ"
         },
@@ -1051,7 +1051,7 @@
           "title": "一年，怎么上650？",
           "cover": "https://i1.hdslb.com/bfs/archive/838a43517b258251ad5710daeea596dd255f81cc.jpg@480w_270h_1c.webp",
           "upper": "树林同学-",
-          "play": 6600275,
+          "play": 6600412,
           "duration": 1093,
           "url": "https://www.bilibili.com/video/BV1zq4y1W7RV"
         },
@@ -1060,7 +1060,7 @@
           "title": "仅仅适用于初高中生，有一定认知门槛",
           "cover": "https://i2.hdslb.com/bfs/archive/1d76b9b35726cc097f4f946594184b8f96e69ad9.jpg@480w_270h_1c.webp",
           "upper": "平盖尔",
-          "play": 74443,
+          "play": 74527,
           "duration": 757,
           "url": "https://www.bilibili.com/video/BV111Kr65EW9"
         },
@@ -1078,7 +1078,7 @@
           "title": "清华学长:五分钟讲透高中物理，学不到东西你来骂我!",
           "cover": "https://i2.hdslb.com/bfs/archive/8fbaefa7adecc1b1e1ca6f7482277a23e0978b9a.jpg@480w_270h_1c.webp",
           "upper": "清华皮皮虾",
-          "play": 397379,
+          "play": 397391,
           "duration": 350,
           "url": "https://www.bilibili.com/video/BV1c94y1U7yL"
         },
@@ -1087,7 +1087,7 @@
           "title": "高一物理强基班，动量第4讲，柯尼希定理，角动量",
           "cover": "https://i0.hdslb.com/bfs/archive/ac2e6ebe75b24eb93f574198a8f7bb75561e6d99.jpg@480w_270h_1c.webp",
           "upper": "物理Max伟",
-          "play": 42555,
+          "play": 42558,
           "duration": 7644,
           "url": "https://www.bilibili.com/video/BV1dUXQY1ELt"
         },
@@ -1096,7 +1096,7 @@
           "title": "高一物理期末复习",
           "cover": "https://i0.hdslb.com/bfs/archive/fb7820b3a6e5e83b1f7384389bea1221d525eddf.jpg@480w_270h_1c.webp",
           "upper": "物理云学习逸迭Eddie",
-          "play": 3283,
+          "play": 3285,
           "duration": 272,
           "url": "https://www.bilibili.com/video/BV1Y4rrB3EBK"
         }
@@ -1114,7 +1114,7 @@
           "title": "【Re:从零开始的AI学习】你真的会用 GitHub 吗？",
           "cover": "https://i0.hdslb.com/bfs/archive/4c6c29fe74ef71f51872a67f769d937392d2156a.jpg@480w_270h_1c.webp",
           "upper": "卡普迪姆",
-          "play": 87661,
+          "play": 87865,
           "duration": 361,
           "url": "https://www.bilibili.com/video/BV1Y8aL6SEit"
         },
@@ -1123,7 +1123,7 @@
           "title": "Github王炸功能Pages,免费免服务器上线网站,详细教程",
           "cover": "https://i1.hdslb.com/bfs/archive/113d4f793655cbcdd6e6796b5f34c6a02bf5f453.jpg@480w_270h_1c.webp",
           "upper": "技术爬爬虾",
-          "play": 103616,
+          "play": 103635,
           "duration": 447,
           "url": "https://www.bilibili.com/video/BV12H4y1N7Q4"
         },
@@ -1132,7 +1132,7 @@
           "title": "网站部署上线教程来喽",
           "cover": "https://i0.hdslb.com/bfs/archive/1337f4dffc55cdac71fdc9cd710ccffd1d80e748.jpg@480w_270h_1c.webp",
           "upper": "小羊同学AIGC",
-          "play": 35922,
+          "play": 35961,
           "duration": 247,
           "url": "https://www.bilibili.com/video/BV12wJA6TEy2"
         },
@@ -1141,7 +1141,7 @@
           "title": "Git+Github核心概念大串讲，从零到一全攻略，详细实战教程",
           "cover": "https://i2.hdslb.com/bfs/archive/6107b3f7c8f89fe5d8681082f2722a834d46cbfa.jpg@480w_270h_1c.webp",
           "upper": "技术爬爬虾",
-          "play": 1221435,
+          "play": 1223364,
           "duration": 2570,
           "url": "https://www.bilibili.com/video/BV1ySLc6QEcB"
         },
@@ -1150,7 +1150,7 @@
           "title": "git和gitee的使用。",
           "cover": "https://i0.hdslb.com/bfs/archive/75091083ebe3a1a8fdb75682f381e22a6c234ac3.jpg@480w_270h_1c.webp",
           "upper": "花景长明",
-          "play": 74592,
+          "play": 74601,
           "duration": 870,
           "url": "https://www.bilibili.com/video/BV1nZ4y1X7Do"
         },
@@ -1159,7 +1159,7 @@
           "title": "【大学生扫盲课】1 Git、GitHub 和 Gitee 完整讲解：从基础到进阶功能",
           "cover": "https://i1.hdslb.com/bfs/archive/82d30faf80db0f2c8ee2fc689684c945483e136d.jpg@480w_270h_1c.webp",
           "upper": "左-岚",
-          "play": 472467,
+          "play": 472531,
           "duration": 1929,
           "url": "https://www.bilibili.com/video/BV1G8CFYvEjt"
         },
@@ -1168,7 +1168,7 @@
           "title": "『教程』手把手教你流畅访问Github",
           "cover": "https://i0.hdslb.com/bfs/archive/71cc640a84087cc99399449c00b93212fe78ee6f.jpg@480w_270h_1c.webp",
           "upper": "偶尔有点小迷糊",
-          "play": 2131268,
+          "play": 2132561,
           "duration": 236,
           "url": "https://www.bilibili.com/video/BV1Aq4y1q7hr"
         },
@@ -1177,7 +1177,7 @@
           "title": "『教程』一看就懂！Github基础教程",
           "cover": "https://i0.hdslb.com/bfs/archive/1401ebe64e88deddf2b44ad6a740ff8872c2fda6.jpg@480w_270h_1c.webp",
           "upper": "偶尔有点小迷糊",
-          "play": 3604051,
+          "play": 3604228,
           "duration": 296,
           "url": "https://www.bilibili.com/video/BV1hS4y1S7wL"
         }
@@ -1195,7 +1195,7 @@
           "title": "【音阙诗听】任然经典歌曲串烧，测测你听过几首",
           "cover": "https://i1.hdslb.com/bfs/archive/b527911aec7a8a078557a9984e4e675aab2471e6.jpg@480w_270h_1c.webp",
           "upper": "音阙诗听",
-          "play": 141751,
+          "play": 141767,
           "duration": 238,
           "url": "https://www.bilibili.com/video/BV1G94y127hX"
         },
@@ -1204,7 +1204,7 @@
           "title": "小朋友大朋友们节日快乐～",
           "cover": "https://i1.hdslb.com/bfs/archive/c211e86f8d4185e98ce026147a2b8e19af6f4712.jpg@480w_270h_1c.webp",
           "upper": "LIAN王梓钰",
-          "play": 10817,
+          "play": 10819,
           "duration": 34,
           "url": "https://www.bilibili.com/video/BV1deVo6pENu"
         },
@@ -1258,7 +1258,7 @@
           "title": "【音阙诗听/王梓钰】看透以后，祝天下有情人终不成眷属",
           "cover": "https://i1.hdslb.com/bfs/archive/4aedf151229511a5992654079da9410aaccc01be.jpg@480w_270h_1c.webp",
           "upper": "音阙诗听",
-          "play": 361640,
+          "play": 361649,
           "duration": 188,
           "url": "https://www.bilibili.com/video/BV19t411K7rs"
         },
@@ -1267,7 +1267,7 @@
           "title": "【官方MV】看透以后-王梓钰",
           "cover": "https://i0.hdslb.com/bfs/archive/9afa85a4a4607cceb1162461e1d1eaed0833f3da.jpg@480w_270h_1c.webp",
           "upper": "音阙诗听",
-          "play": 59550,
+          "play": 59555,
           "duration": 231,
           "url": "https://www.bilibili.com/video/BV1R4411g7uU"
         },
@@ -1303,7 +1303,7 @@
           "title": "【王梓钰】全新生日单曲《等一下！》",
           "cover": "https://i2.hdslb.com/bfs/archive/1f824ef76bad6a2397a773384f7a42e3262040e9.jpg@480w_270h_1c.webp",
           "upper": "LIAN王梓钰",
-          "play": 75277,
+          "play": 75285,
           "duration": 186,
           "url": "https://www.bilibili.com/video/BV1mR4y1t74E"
         },
@@ -1312,7 +1312,7 @@
           "title": "【王梓钰4K】-【处暑】现场版【赵方婧王梓钰久久9周年专场】",
           "cover": "https://i2.hdslb.com/bfs/archive/678978765a7b1958582193780f1118b45b9ae5dc.jpg@480w_270h_1c.webp",
           "upper": "紫夜九星",
-          "play": 517,
+          "play": 518,
           "duration": 231,
           "url": "https://www.bilibili.com/video/BV1d9bszWEy7"
         },
@@ -1330,7 +1330,7 @@
           "title": "【王梓钰】我也不想心动啊，可是她唱《恋爱告急》耶！",
           "cover": "https://i1.hdslb.com/bfs/archive/db6932428b2a703672f6867bbb7676a99a090e12.jpg@480w_270h_1c.webp",
           "upper": "LIAN王梓钰",
-          "play": 125498,
+          "play": 125509,
           "duration": 79,
           "url": "https://www.bilibili.com/video/BV1WL4y17763"
         },
@@ -1339,7 +1339,7 @@
           "title": "【2020.05.25】音阙诗听B站直播录像(王梓钰&赵方婧)",
           "cover": "https://i1.hdslb.com/bfs/archive/07c0ae6d5d33085fa8f1aa8d12e5d5dcd01c2bb8.jpg@480w_270h_1c.webp",
           "upper": "风靡义磊",
-          "play": 30857,
+          "play": 30861,
           "duration": 6778,
           "url": "https://www.bilibili.com/video/BV1Pv411s7K6"
         },
@@ -1357,7 +1357,7 @@
           "title": "不会弹，但是得有演技",
           "cover": "https://i2.hdslb.com/bfs/archive/911de853d42046990fdfcd7755a52685383d6eee.jpg@480w_270h_1c.webp",
           "upper": "LIAN王梓钰",
-          "play": 204254,
+          "play": 204255,
           "duration": 80,
           "url": "https://www.bilibili.com/video/BV1aE411q7FG"
         },
@@ -1366,7 +1366,7 @@
           "title": "【音阙诗听/王梓钰】奏一相思曲，《此曲赠与君》",
           "cover": "https://i2.hdslb.com/bfs/archive/cb84d565348c96336e5ef8228d6b1dfb4faf4a62.jpg@480w_270h_1c.webp",
           "upper": "音阙诗听",
-          "play": 220957,
+          "play": 220964,
           "duration": 285,
           "url": "https://www.bilibili.com/video/BV1Vv411s7eu"
         }
@@ -1384,7 +1384,7 @@
           "title": "【一数】直线与圆知识与解法完整合集|从零开始讲！|高中数学",
           "cover": "https://i0.hdslb.com/bfs/archive/8bd6e0e1c9c2ab30cf41804713c62a33d6ec34b4.jpg@480w_270h_1c.webp",
           "upper": "一数",
-          "play": 5409458,
+          "play": 5409656,
           "duration": 13959,
           "url": "https://www.bilibili.com/video/BV1rQ4y1Q7ip"
         }
@@ -1402,7 +1402,7 @@
           "title": "【伪音教程】暑假拒绝摆烂！改掉用嗓坏习惯，伪音配音变态好听！从零基础小白到声优大佬，让你嗓子吊打变声器！（附最新配音教程|播音主持|普通话技巧）",
           "cover": "https://i1.hdslb.com/bfs/archive/4e57f436de004c47c9810233f9d0217910920698.png@480w_270h_1c.webp",
           "upper": "配音猫猫酱",
-          "play": 69220,
+          "play": 69221,
           "duration": 17189,
           "url": "https://www.bilibili.com/video/BV1qy411z76Z"
         },
@@ -1411,7 +1411,7 @@
           "title": "伪音说不了话怎麽办? 先解决这",
           "cover": "https://i2.hdslb.com/bfs/archive/108d61111739343f03870dff30572d9519d7a18c.jpg@480w_270h_1c.webp",
           "upper": "魔王拉麵",
-          "play": 9269,
+          "play": 9270,
           "duration": 346,
           "url": "https://www.bilibili.com/video/BV1R8GzzEEH7"
         },
@@ -1420,7 +1420,7 @@
           "title": "每个男孩子都可以学会的伪声教程",
           "cover": "https://i0.hdslb.com/bfs/archive/35745882832033e7fdbb0b8c02ab0ffc51902795.jpg@480w_270h_1c.webp",
           "upper": "千沧MONSTER",
-          "play": 7374752,
+          "play": 7375091,
           "duration": 369,
           "url": "https://www.bilibili.com/video/BV16i4y1t7WW"
         },
@@ -1438,7 +1438,7 @@
           "title": "[补档] 一个强制学会伪声的教程",
           "cover": "https://i0.hdslb.com/bfs/archive/7cb2880f0e3d62b436533f059eb85a2db9c164d2.jpg@480w_270h_1c.webp",
           "upper": "千沧MONSTER",
-          "play": 596223,
+          "play": 596270,
           "duration": 481,
           "url": "https://www.bilibili.com/video/BV1Z24y167VD"
         },
@@ -1465,7 +1465,7 @@
           "title": "零基础如何辨别自己是不是五音不全，五音不全真的就没救了吗？【系统学唱歌第一课 —— 音准（一）】",
           "cover": "https://i2.hdslb.com/bfs/archive/be9d21a907fb3cc57b197f7f157605d72e793a6f.png@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 1446875,
+          "play": 1446931,
           "duration": 528,
           "url": "https://www.bilibili.com/video/BV1iZ4y1s7Qs"
         },
@@ -1474,7 +1474,7 @@
           "title": "盲目自学“强混”真的毁嗓❗❗学会头混教你拿捏#C5",
           "cover": "https://i2.hdslb.com/bfs/archive/d358b11e11e8c0daa36c496f116e15fd0dfdd9d6.jpg@480w_270h_1c.webp",
           "upper": "杰森易趣音乐课堂",
-          "play": 43735,
+          "play": 43748,
           "duration": 345,
           "url": "https://www.bilibili.com/video/BV1fPYszaEcs"
         },
@@ -1483,7 +1483,7 @@
           "title": "高音亦有差距？一条视频教你如何拥有林俊杰/张杰式的高音！",
           "cover": "https://i2.hdslb.com/bfs/archive/8e8aa2d48d7c6911142dc1d1109365cef7dbc8d6.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 1685721,
+          "play": 1685735,
           "duration": 685,
           "url": "https://www.bilibili.com/video/BV1P4xge4EZN"
         },
@@ -1492,7 +1492,7 @@
           "title": "大经理到底怎么唱？全网最详细的陶喆《小镇姑娘》歌曲教学！",
           "cover": "https://i1.hdslb.com/bfs/archive/be2f9ab80030a56dbb6c22d152dd21279d7305f7.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 741039,
+          "play": 741091,
           "duration": 826,
           "url": "https://www.bilibili.com/video/BV1pa4y1S7Ng"
         },
@@ -1501,7 +1501,7 @@
           "title": "这首歌每一句歌词的结尾都是“ai”，教你学会周杰伦的《花海》快唱给你心爱的人听吧！",
           "cover": "https://i0.hdslb.com/bfs/archive/b4366233f0892c7dafa64737aee72e8be16c0e59.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 1295929,
+          "play": 1295981,
           "duration": 644,
           "url": "https://www.bilibili.com/video/BV1ZU4y1a7Ei"
         },
@@ -1510,7 +1510,7 @@
           "title": "【Jason】作死挑战林俊杰版《起风了》 高音C5直接炸裂起飞",
           "cover": "https://i1.hdslb.com/bfs/archive/4f35db38300984ea3b342f0a25ef57056b4f2490.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 1187594,
+          "play": 1187675,
           "duration": 220,
           "url": "https://www.bilibili.com/video/BV1Rr4y137n9"
         },
@@ -1519,7 +1519,7 @@
           "title": "这是一首会让邓紫棋唱到哽咽的歌曲！全网爆火的《句号》最详细教学！",
           "cover": "https://i2.hdslb.com/bfs/archive/01227e34d19a08a907ed02b54abed533712fcdab.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 1104893,
+          "play": 1104912,
           "duration": 846,
           "url": "https://www.bilibili.com/video/BV1Bk4y1X75b"
         },
@@ -1528,7 +1528,7 @@
           "title": "“在神仙打架的09年！这首中国风神曲到底是如何脱颖而出的？”带你深度解析这首许嵩的《清明雨上》！",
           "cover": "https://i0.hdslb.com/bfs/archive/7bd87e2dd2f65ab74cd7145bc88c1953b7444b30.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 553394,
+          "play": 553422,
           "duration": 685,
           "url": "https://www.bilibili.com/video/BV1oP411g7QY"
         },
@@ -1537,7 +1537,7 @@
           "title": "“忘不了那个人就投降”教你学会林俊杰的《修炼爱情》，每一次爱都是一次修炼",
           "cover": "https://i1.hdslb.com/bfs/archive/ca32869e825ee9637f33c8e92b5db6b878031599.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 775231,
+          "play": 775339,
           "duration": 776,
           "url": "https://www.bilibili.com/video/BV1pd4y1v7ww"
         },
@@ -1546,7 +1546,7 @@
           "title": "\"毁嗓\"有救了❗️只是加了一点闭合，高音瞬间就干净了‼️",
           "cover": "https://i1.hdslb.com/bfs/archive/c562b2af033274336e3faaafd02875f86573d3f6.jpg@480w_270h_1c.webp",
           "upper": "杰森-易趣官方课堂",
-          "play": 37525,
+          "play": 37531,
           "duration": 121,
           "url": "https://www.bilibili.com/video/BV1vghWzQE3D"
         },
@@ -1555,7 +1555,7 @@
           "title": "拒绝“一秒四破”！陶喆经典情歌《爱我还是他》详细教学！",
           "cover": "https://i1.hdslb.com/bfs/archive/e1d3dafb05af309f3895adb87c8edcf21ba5a477.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 853755,
+          "play": 853810,
           "duration": 911,
           "url": "https://www.bilibili.com/video/BV1qbkuYPECg"
         },
@@ -1564,7 +1564,7 @@
           "title": "正在学唱歌的你，请务必点进这个视频！从零基础开始进行针对性的提升！【建议收藏】",
           "cover": "https://i1.hdslb.com/bfs/archive/639af68c160b253ced3552938f2dbf54b361651d.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 1353156,
+          "play": 1353223,
           "duration": 757,
           "url": "https://www.bilibili.com/video/BV1wv411W7pn"
         },
@@ -1573,7 +1573,7 @@
           "title": "米津玄师《Lemon》教学全网最详细版本",
           "cover": "https://i2.hdslb.com/bfs/archive/78d493d7f7579542600859c9b91d067f42ce6ea9.jpg@480w_270h_1c.webp",
           "upper": "55老师",
-          "play": 1057308,
+          "play": 1057428,
           "duration": 5072,
           "url": "https://www.bilibili.com/video/BV1wy4y1k7aZ"
         },
@@ -1582,7 +1582,7 @@
           "title": "【全368集】比付费还强10倍的自学唱歌全套教程，全程通俗易懂，别再走弯路了，从唱歌小白到麦霸看这套就够了！",
           "cover": "https://i1.hdslb.com/bfs/archive/a75ab9ce1ccacb3a8424a2d239f74cf26adf80c8.jpg@480w_270h_1c.webp",
           "upper": "教唱歌的阿兰吖",
-          "play": 51641,
+          "play": 51643,
           "duration": 71498,
           "url": "https://www.bilibili.com/video/BV1aC3jz7E92"
         },
@@ -1600,7 +1600,7 @@
           "title": "米津玄师《打上花火》教学全网最详细版本",
           "cover": "https://i1.hdslb.com/bfs/archive/c7e5b2ebedd20b01f9ae2e60adc86201a00c31dc.jpg@480w_270h_1c.webp",
           "upper": "55老师",
-          "play": 517040,
+          "play": 517095,
           "duration": 3599,
           "url": "https://www.bilibili.com/video/BV1BA411x78A"
         },
@@ -1609,7 +1609,7 @@
           "title": "【洛天依原创曲】长大是《正片开始》，不是结束",
           "cover": "https://i2.hdslb.com/bfs/archive/daeba8cec86376e73883f67c8f80a912a623ba95.jpg@480w_270h_1c.webp",
           "upper": "运佳BlackberryP",
-          "play": 75836,
+          "play": 75841,
           "duration": 212,
           "url": "https://www.bilibili.com/video/BV13u3EzJEYs"
         },
@@ -1618,7 +1618,7 @@
           "title": "一个强制学会0基础【保姆级】伪音教学-合集",
           "cover": "https://i1.hdslb.com/bfs/archive/2df472a27d6d144165f0677a94c928c82f0d9cfd.jpg@480w_270h_1c.webp",
           "upper": "魔王拉麵",
-          "play": 95030,
+          "play": 95040,
           "duration": 1091,
           "url": "https://www.bilibili.com/video/BV15cfDYHE62"
         },
@@ -1627,7 +1627,7 @@
           "title": "【收藏即可进步】想要拓宽音域和唱出炸裂的高音吗？每天打卡15分钟让你唱歌再也不“虚”！",
           "cover": "https://i2.hdslb.com/bfs/archive/5bb9c4eb55e92be9bcc6f3625591650f24f649f4.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 752760,
+          "play": 752772,
           "duration": 348,
           "url": "https://www.bilibili.com/video/BV1gM4y1x7ig"
         },
@@ -1636,7 +1636,7 @@
           "title": "歌手唱歌声压拉满，你的声音却入不了麦？一条视频教你轻松解决！",
           "cover": "https://i0.hdslb.com/bfs/archive/84c067f6f88e9bf2f2ffa180cd34c9de30be4f3d.jpg@480w_270h_1c.webp",
           "upper": "Jason-老湿",
-          "play": 2023092,
+          "play": 2023129,
           "duration": 403,
           "url": "https://www.bilibili.com/video/BV1XrRdY9Ehn"
         }
@@ -1654,7 +1654,7 @@
           "title": "32岁我搬到村里 企图夺回被牺牲的睡眠",
           "cover": "https://i2.hdslb.com/bfs/archive/4c58bf35e6c2494700d0388267cad155e0ff5b19.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 489084,
+          "play": 489099,
           "duration": 492,
           "url": "https://www.bilibili.com/video/BV1cHEd63EaN"
         },
@@ -1663,7 +1663,7 @@
           "title": "15分钟满血复活｜熬夜救星 高效休息",
           "cover": "https://i1.hdslb.com/bfs/archive/917d0ae96745e0ecba103564efda6985b2683578.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 80845,
+          "play": 80921,
           "duration": 956,
           "url": "https://www.bilibili.com/video/BV159Ni66EFp"
         },
@@ -1672,7 +1672,7 @@
           "title": "坐位体前屈有救了？！8min腘绳肌拉伸｜柔韧性提升",
           "cover": "https://i2.hdslb.com/bfs/archive/e43e02d9bf514b5a265eeb6bb9357b39389226f3.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 390359,
+          "play": 390831,
           "duration": 477,
           "url": "https://www.bilibili.com/video/BV1ksqwBeEvD"
         },
@@ -1681,7 +1681,7 @@
           "title": "5分钟眼部按摩，缓解视疲劳 恢复明亮眼",
           "cover": "https://i2.hdslb.com/bfs/archive/48e5fcd6974f07556c8c97b1cbe253b782a1ffc1.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 61190,
+          "play": 61305,
           "duration": 295,
           "url": "https://www.bilibili.com/video/BV1fFTx69ETZ"
         },
@@ -1690,7 +1690,7 @@
           "title": "1㎡瘦身挑战｜5个原地活力拉伸，户外室内都能练",
           "cover": "https://i2.hdslb.com/bfs/archive/6ca50eee9c0e75606a0ef1571d5443ed3f2d8dfd.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 41284,
+          "play": 41287,
           "duration": 83,
           "url": "https://www.bilibili.com/video/BV1Q78BzJEMw"
         },
@@ -1699,7 +1699,7 @@
           "title": "八段锦｜青城派掌门亲授 10分钟跟练版",
           "cover": "https://i1.hdslb.com/bfs/archive/6ffc29875d270d12961792342d12d04d5dc16151.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 428356,
+          "play": 428432,
           "duration": 842,
           "url": "https://www.bilibili.com/video/BV1jhtBz9EjA"
         },
@@ -1708,7 +1708,7 @@
           "title": "来不及了！！面试脸部急救：10min立现小V脸&好状态",
           "cover": "https://i0.hdslb.com/bfs/archive/32ae570dd82db3c41f5b927c6ca7b0e27f6cac73.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 103942,
+          "play": 103959,
           "duration": 335,
           "url": "https://www.bilibili.com/video/BV1AkYQzHEXX"
         },
@@ -1717,7 +1717,7 @@
           "title": "吃饭=减肥？一口饭嚼20次才咽是什么体验？",
           "cover": "https://i2.hdslb.com/bfs/archive/1fae1877db11d60a533edc1a7194d18a8950ba35.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 57711,
+          "play": 57728,
           "duration": 1874,
           "url": "https://www.bilibili.com/video/BV1xHbzzkELj"
         },
@@ -1726,7 +1726,7 @@
           "title": "易筋经（完整版带口令）老祖宗的养生秘诀！",
           "cover": "https://i2.hdslb.com/bfs/archive/7a7bae54bf726aac95b21b09f65528d372569fe5.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 320400,
+          "play": 320528,
           "duration": 937,
           "url": "https://www.bilibili.com/video/BV1shFjzTEHY"
         },
@@ -1735,7 +1735,7 @@
           "title": "纯净版｜3分钟入睡，焦虑型失眠的升级解法 30min助眠冥想2.0",
           "cover": "https://i2.hdslb.com/bfs/archive/f5e028c233240a59217d5133b249e51b00ef594d.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 133120,
+          "play": 133169,
           "duration": 1808,
           "url": "https://www.bilibili.com/video/BV1E9pJztELq"
         },
@@ -1744,7 +1744,7 @@
           "title": "【升级跟练】头皮八段锦2.0｜养发+醒脑一次搞定！",
           "cover": "https://i2.hdslb.com/bfs/archive/7e82ad5e63dc01370b555469a4733fca7fe670d4.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 75509,
+          "play": 75575,
           "duration": 304,
           "url": "https://www.bilibili.com/video/BV1V1m1BKEum"
         },
@@ -1753,7 +1753,7 @@
           "title": "别把“前倾”当“翘臀”！15分钟带你找回中立骨盆，告别腰痛",
           "cover": "https://i1.hdslb.com/bfs/archive/c88508ca41b7f27dbc9e9f64c6c33dcd55e77b29.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 76162,
+          "play": 76190,
           "duration": 1088,
           "url": "https://www.bilibili.com/video/BV1M6pvzpE8q"
         },
@@ -1762,7 +1762,7 @@
           "title": "睡前冥想引导 坚持不到5分钟就会睡着，摆脱精神内耗提高白天专注力",
           "cover": "https://i0.hdslb.com/bfs/archive/07115ed363c75a5f3581be2d5f5e05e0f7f04e40.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 5684693,
+          "play": 5685265,
           "duration": 993,
           "url": "https://www.bilibili.com/video/BV13V4y177qs"
         },
@@ -1771,7 +1771,7 @@
           "title": "10min摸鱼指南｜工位+弹力带=好体态？",
           "cover": "https://i2.hdslb.com/bfs/archive/800d77fa4a22cbd692c3cd0b033f91eb47742d4f.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 29195,
+          "play": 29201,
           "duration": 662,
           "url": "https://www.bilibili.com/video/BV1fwszzDEKj"
         },
@@ -1780,7 +1780,7 @@
           "title": "20min动态冥想｜注意用脑卫生，关机重启，提升脑力专注力",
           "cover": "https://i2.hdslb.com/bfs/archive/7b964b414e2b9e582207f044867db47aaa8d9a16.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 47458,
+          "play": 47472,
           "duration": 1430,
           "url": "https://www.bilibili.com/video/BV1ggcEzpEzp"
         },
@@ -1789,7 +1789,7 @@
           "title": "晚上做自然入眠、白天做增强专注，15min床上拉伸（阳康适宜）",
           "cover": "https://i0.hdslb.com/bfs/archive/09c929820a8ce418688bc48044ecb26c95fd6677.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 373539,
+          "play": 373545,
           "duration": 974,
           "url": "https://www.bilibili.com/video/BV1RP4y1r79q"
         },
@@ -1798,7 +1798,7 @@
           "title": "纯净版｜2000w人看过 焦虑内耗失眠必备！坚持不到5分钟就会睡着的助眠冥想 【30min全新加强版】",
           "cover": "https://i2.hdslb.com/bfs/archive/b5a7ba69aa3c8852e506294f9febbdc0be193929.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 1378160,
+          "play": 1378581,
           "duration": 1800,
           "url": "https://www.bilibili.com/video/BV18dBiYREkW"
         },
@@ -1807,7 +1807,7 @@
           "title": "比花钱去按摩还爽！14min腿部拉伸+自我按摩 瘦小腿消疲劳肌肉腿水肿腿必做！",
           "cover": "https://i0.hdslb.com/bfs/archive/fd347f3d631ee2ee0ed2f54a3476c623f85fbd51.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 1551123,
+          "play": 1551275,
           "duration": 961,
           "url": "https://www.bilibili.com/video/BV1o24y1f7az"
         },
@@ -1816,7 +1816,7 @@
           "title": "专治“想不起来”和“专注不了”｜给大脑的一次深度SPA",
           "cover": "https://i0.hdslb.com/bfs/archive/4ecae549b7c80ea7a55cb4bbed5f283de965b106.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 54385,
+          "play": 54412,
           "duration": 1017,
           "url": "https://www.bilibili.com/video/BV1jwm4BXEeN"
         },
@@ -1825,7 +1825,7 @@
           "title": "【好梦瑜伽】15min提高睡眠质量 舒展身心的睡前拉伸 ｜ 0基础全身拉伸 （宿舍友好 ）4K",
           "cover": "https://i0.hdslb.com/bfs/archive/26e3750193735bf951209e438751711c0565c5f9.jpg@480w_270h_1c.webp",
           "upper": "范李猿",
-          "play": 2058989,
+          "play": 2059171,
           "duration": 2066,
           "url": "https://www.bilibili.com/video/BV19f4y1E76K"
         }
@@ -1852,7 +1852,7 @@
           "title": "你不知道的古筝特效音！还有多少种？",
           "cover": "https://i1.hdslb.com/bfs/archive/7fa2e4e519c5b15e62f7a06a7b69db5681060e92.jpg@480w_270h_1c.webp",
           "upper": "琴诗一筝",
-          "play": 39890,
+          "play": 39895,
           "duration": 38,
           "url": "https://www.bilibili.com/video/BV1qWeEzEEBb"
         },
@@ -1879,7 +1879,7 @@
           "title": "撒野女孩看过来！纯筝翻奏《撒野》，来奔跑吧",
           "cover": "https://i2.hdslb.com/bfs/archive/acecd91514b45e3bf8643971acfc0707295199a9.jpg@480w_270h_1c.webp",
           "upper": "梦予。",
-          "play": 266754,
+          "play": 266760,
           "duration": 89,
           "url": "https://www.bilibili.com/video/BV1A5411s792"
         },
@@ -1888,7 +1888,7 @@
           "title": "小夏老师这么不爱惜身体，砸个七位数的琴也是正常的吧？【古筝ver.】拂晓",
           "cover": "https://i0.hdslb.com/bfs/archive/65cdf0ac0e5f0f09613e38446243782e46933bbd.jpg@480w_270h_1c.webp",
           "upper": "緋色の翼",
-          "play": 21447,
+          "play": 21451,
           "duration": 259,
           "url": "https://www.bilibili.com/video/BV1xWhHzNE9h"
         },
@@ -1906,7 +1906,7 @@
           "title": "老祖宗的顶级情绪，你能听懂几个?",
           "cover": "https://i1.hdslb.com/bfs/archive/e00f8508031e59f29d2e921c39a86980dde02c6e.jpg@480w_270h_1c.webp",
           "upper": "碰碰彭碰彭",
-          "play": 306062,
+          "play": 306090,
           "duration": 177,
           "url": "https://www.bilibili.com/video/BV19rdJBHEVA"
         },
@@ -1915,7 +1915,7 @@
           "title": " 【古筝】千本樱——你可见过如此凶残的练习曲",
           "cover": "https://i0.hdslb.com/bfs/archive/baae2b4050363c0ab45465b7cf696b8304fdaca8.jpg@480w_270h_1c.webp",
           "upper": "墨韵Moyun",
-          "play": 66260110,
+          "play": 66261744,
           "duration": 295,
           "url": "https://www.bilibili.com/video/BV1Sx411T7QQ"
         },
@@ -1924,7 +1924,7 @@
           "title": "【古筝】《红昭愿》纯筝翻奏，还得是古风啊（附谱）",
           "cover": "https://i0.hdslb.com/bfs/archive/167be8baa191b9d9f278e204ccedc56f43cf29f0.jpg@480w_270h_1c.webp",
           "upper": "多啦A梦的小古筝",
-          "play": 59822,
+          "play": 59833,
           "duration": 72,
           "url": "https://www.bilibili.com/video/BV1mT421k7y4"
         },
@@ -1933,7 +1933,7 @@
           "title": "直到弹完，才惊觉自己已是泪如雨下。",
           "cover": "https://i0.hdslb.com/bfs/archive/d1ed38dceae959e8ddc1a710f4225435406ed762.jpg@480w_270h_1c.webp",
           "upper": "裴去病",
-          "play": 148210,
+          "play": 148232,
           "duration": 100,
           "url": "https://www.bilibili.com/video/BV1zYNAe1ExM"
         },
@@ -1951,7 +1951,7 @@
           "title": "【寄明月】古筝完整版·好适合在热闹的新年弹呀",
           "cover": "https://i2.hdslb.com/bfs/archive/938c48eb337834f2f55ff56430125c894be8fce9.jpg@480w_270h_1c.webp",
           "upper": "o豆沙君o",
-          "play": 33524,
+          "play": 33531,
           "duration": 225,
           "url": "https://www.bilibili.com/video/BV1nJcmebEQn"
         },
@@ -1960,7 +1960,7 @@
           "title": "大学时第一次听到这曲子简直惊为天人。。《Flower Dance 花之舞》古筝钢琴合奏",
           "cover": "https://i0.hdslb.com/bfs/archive/709387b6355f239f2a6ed493bf1e7b962122cf6c.jpg@480w_270h_1c.webp",
           "upper": "裴去病",
-          "play": 91761,
+          "play": 91771,
           "duration": 269,
           "url": "https://www.bilibili.com/video/BV1rHZ9Y6Erd"
         },
@@ -1969,7 +1969,7 @@
           "title": "【古筝】“我葬的是花的肉身，花葬的是我的灵魂”——87版红楼梦《葬花吟》",
           "cover": "https://i2.hdslb.com/bfs/archive/bf549e5095fd84bf32f07b9ee283480ee111c83a.jpg@480w_270h_1c.webp",
           "upper": "裴去病",
-          "play": 61392,
+          "play": 61404,
           "duration": 267,
           "url": "https://www.bilibili.com/video/BV1uoZqYkEg9"
         },
@@ -1978,7 +1978,7 @@
           "title": "【古筝】cos城管弹了bad apple!!!",
           "cover": "https://i2.hdslb.com/bfs/archive/db37496849c12cf301016a64eced87d2ba0fb6f6.jpg@480w_270h_1c.webp",
           "upper": "哈咔nine",
-          "play": 14233,
+          "play": 14234,
           "duration": 125,
           "url": "https://www.bilibili.com/video/BV1dmfpYLE86"
         },
@@ -1987,7 +1987,7 @@
           "title": "年少风雅鲜衣怒马，也不过一刹那",
           "cover": "https://i2.hdslb.com/bfs/archive/0f9421964f7ad6072861858627b080825b71e4e7.jpg@480w_270h_1c.webp",
           "upper": "裴去病",
-          "play": 31264,
+          "play": 31267,
           "duration": 62,
           "url": "https://www.bilibili.com/video/BV1QfKPe6ECd"
         },
@@ -1996,7 +1996,7 @@
           "title": "【古筝】《寄明月》附谱",
           "cover": "https://i0.hdslb.com/bfs/archive/23d60afbd618f44f3f1edd9ffef36e1218cd5c49.jpg@480w_270h_1c.webp",
           "upper": "裴去病",
-          "play": 188332,
+          "play": 188357,
           "duration": 229,
           "url": "https://www.bilibili.com/video/BV1rF411A7qK"
         },
@@ -2005,7 +2005,7 @@
           "title": "【筝鼓和鸣】权御天下 ——墨韵随步摇 ft. 司鼓君",
           "cover": "https://i1.hdslb.com/bfs/archive/7f80edc63865249525a366ec790a0b65dd0177bd.jpg@480w_270h_1c.webp",
           "upper": "墨韵Moyun",
-          "play": 17534579,
+          "play": 17535155,
           "duration": 307,
           "url": "https://www.bilibili.com/video/BV1fs411S7u7"
         },
@@ -2014,7 +2014,7 @@
           "title": "【古筝】《天下》纯筝翻奏｜遇见她如春水映梨花（附谱）",
           "cover": "https://i2.hdslb.com/bfs/archive/48c401166068acfcc0e009b19269eaa35554509d.jpg@480w_270h_1c.webp",
           "upper": "多啦A梦的小古筝",
-          "play": 101624,
+          "play": 101633,
           "duration": 92,
           "url": "https://www.bilibili.com/video/BV1BCqaYWEWr"
         }
@@ -2032,7 +2032,7 @@
           "title": "【高中生物】2小时，快速复习！",
           "cover": "https://i2.hdslb.com/bfs/archive/a60350172336873ef80fb685379da263cf52dd5a.png@480w_270h_1c.webp",
           "upper": "学霸同桌",
-          "play": 2238167,
+          "play": 2238187,
           "duration": 3855,
           "url": "https://www.bilibili.com/video/BV1fd4y1r7WS"
         },
@@ -2041,7 +2041,7 @@
           "title": "【生物选择性必修一】复习用这个，效率提高500%",
           "cover": "https://i2.hdslb.com/bfs/archive/4cdb0b61491232d0bd7bc3f849b4e918750c7a29.jpg@480w_270h_1c.webp",
           "upper": "学霸同桌",
-          "play": 23631,
+          "play": 23633,
           "duration": 845,
           "url": "https://www.bilibili.com/video/BV1sNN2zPEYi"
         },
@@ -2050,7 +2050,7 @@
           "title": "半小时总结生物必修一全部知识点！（2倍速）",
           "cover": "https://i1.hdslb.com/bfs/archive/9397df7c00262f1a4f3ed8838d00ad0d1dff7d39.jpg@480w_270h_1c.webp",
           "upper": "学霸同桌",
-          "play": 177010,
+          "play": 177081,
           "duration": 1553,
           "url": "https://www.bilibili.com/video/BV17Qs9eNEtf"
         }
