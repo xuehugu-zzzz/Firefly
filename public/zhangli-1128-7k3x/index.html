@@ -192,6 +192,46 @@ body.ready #au{opacity:1}#au.pl{color:var(--gold)}
 .letter-wrap{padding:24px 20px}.letter-page p{font-size:14px;line-height:2.1}
 .hoshino-sticker{width:70px;height:70px;right:-10px;top:-10px}
 }
+/* ===== 移动端加固（v2） ===== */
+@supports(height:100dvh){html,body{height:100dvh}}
+body{touch-action:manipulation;-webkit-text-size-adjust:100%}
+@media(max-width:640px){
+  .sc{padding:52px 18px calc(128px + env(safe-area-inset-bottom,0px))}
+  .in{-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  #gd{left:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+  #au{right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+  .bub{max-width:min(250px,58vw)}
+  .cps{gap:14px}.cp{width:104px}
+  .pol,.pf{max-width:min(300px,76vw)}
+  .ht{font-size:clamp(34px,11.5vw,52px)}
+  .letter-nav{padding-bottom:8px}
+  .letter-wrap{padding:18px 16px}
+  .letter-page p{font-size:13px;line-height:1.9;margin-bottom:12px}
+  .letter-page .sign{margin-top:20px;font-size:16px}
+  /* 压缩纵向尺寸，尽量一屏读完 */
+  .chap{margin-bottom:14px}
+  .qm{display:none}
+  .pf{max-width:min(272px,74vw);padding:9px}
+  .note{padding:20px 16px 16px}
+  .pc{font-size:15px;line-height:1.85;min-height:auto;margin-bottom:12px}
+  .pro p{font-size:13.5px;line-height:1.95;margin-bottom:12px}
+  .rs h4{font-size:clamp(28px,9vw,40px)}
+  .qc{padding:22px 16px}
+  .qq{font-size:16px}
+  .qo{padding:12px 14px;font-size:13.5px}
+  .sc.jrn .spark{display:none}
+  /* 拾光：改成纵向卡片流，去掉固定坐标与光点 */
+  .sc.jrn{padding:0}
+  .sc.jrn .wd{position:relative;height:auto!important;transform:none!important;display:flex;flex-direction:column;gap:16px;
+    padding:96px 18px calc(140px + env(safe-area-inset-bottom,0px));overflow-y:auto;-webkit-overflow-scrolling:touch;max-height:100dvh}
+  .sc.jrn .it{position:static!important;left:auto!important;top:auto!important;width:100%;max-width:320px;margin:0 auto;
+    transform:none!important;opacity:1!important;pointer-events:auto}
+  .sc.jrn .story-card{transform:rotate(0deg)!important}
+  .sc.jrn .ln{display:none}
+  .sc.jrn .spark{position:relative;left:auto!important;top:auto!important;display:flex;width:46px;height:46px;margin:14px auto 6px!important;opacity:1!important;transform:none!important}
+  .sc.jrn .it.past{opacity:.55!important}
+  .sc.jrn .jc{top:auto!important;bottom:calc(16px + env(safe-area-inset-bottom,0px))!important}
+}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -386,8 +426,8 @@ addEventListener('resize',build);build();f()})();
 /* 场景切换 */
 let cur=0,lock=false,jReading=false,jDone=false,jBusy=false,lPage=1;
 const H=[['轻触屏幕任意处 · 翻页'],['轻触屏幕任意处 · 继续'],null,['轻触屏幕任意处 · 继续'],['选一个最像的答案'],['点击信件区域 · 翻看下一页'],['轻触屏幕任意处 · 回到开头']];
-function say(){const b=document.querySelector('.bub'),h=H[cur]||[jDone?'轻触屏幕任意处 · 继续':jReading?'轻触屏幕任意处 · 继续前行':'轻触那颗光点'];
-b.classList.add('sw0');setTimeout(()=>{$('#gt').textContent=C.guide[cur]||'';$('#gh').textContent=h[0];b.classList.remove('sw0')},380)}
+function say(){const b=document.querySelector('.bub'),h=H[cur]||[jDone?'轻触屏幕任意处 · 继续':jReading?'轻触屏幕任意处 · 继续前行':'轻触卡片 · 打开这段回忆'];
+b.classList.add('sw0');setTimeout(()=>{$('#gt').textContent=C.guide[cur]||'';{const _sc=document.querySelectorAll('.sc')[cur],_in=_sc&&_sc.querySelector('.in');const _ov=_in&&_in.scrollHeight>_in.clientHeight+8;$('#gh').textContent=_ov?h[0]+' \u00b7 \u4e0a\u4e0b\u6ed1\u52a8\u53ef\u770b\u5168\u6587':h[0]};b.classList.remove('sw0')},380)}
 const hues=[0,-16,20,-28,34,15,8];
 function go(i,x,y){i=(i+S.length)%S.length;if(i===cur||lock)return;lock=true;S[cur].classList.remove('on');S[i].classList.add('on');cur=i;document.body.style.setProperty('--h',hues[i]||0);
 if(x!=null)rip(x,y);say();if(i===2)startJ();setTimeout(()=>lock=false,1000)}
@@ -411,9 +451,15 @@ function advance(x,y){
 }
 
 let dp={x:0,y:0,t:0};
+/* 滑动/滚动时不要误触发“翻页” */
+let scrollT=0,touchY0=0,touchMoved=0;
+addEventListener('touchstart',e=>{touchY0=e.touches[0].clientY},{passive:true});
+addEventListener('touchend',e=>{if(Math.abs(e.changedTouches[0].clientY-touchY0)>10)touchMoved=Date.now()},{passive:true});
+document.querySelectorAll('.in,#wd').forEach(el=>el.addEventListener('scroll',()=>{scrollT=Date.now()},{passive:true}));
 addEventListener('pointerdown',e=>dp={x:e.clientX,y:e.clientY,t:performance.now()},{passive:true});
 addEventListener('click',e=>{
   if(Math.abs(e.clientX-dp.x)>14||Math.abs(e.clientY-dp.y)>14||performance.now()-dp.t>700)return;
+  if(Date.now()-scrollT<700||Date.now()-touchMoved<700)return;
   if(e.target.closest('button,a'))return;
   if(e.target.closest('.qc,.jc'))return;
   
@@ -447,7 +493,8 @@ J.forEach((j,i)=>{
     <p class="cap">${j.cap}</p>
   </div>
   <button class="spark" aria-label="触碰这段记忆"><em></em><em></em><b></b></button>`;
-  wd.appendChild(d);its.push(d);d.querySelector('.spark').onclick=()=>openJ(i)
+  wd.appendChild(d);its.push(d);d.querySelector('.spark').onclick=()=>openJ(i);
+  d.onclick=()=>{if(i===ji)openJ(i)}
 });
 
 const camY=()=>Math.max(0,pos[ji].y-innerHeight*(innerWidth<640?.36:.6));
@@ -502,7 +549,7 @@ g.textAlign='center';g.fillStyle='#b98f4a';g.font='26px "Songti SC",serif';g.fil
 const gr=g.createLinearGradient(W*.2,0,W*.8,0);gr.addColorStop(0,'#414659');gr.addColorStop(.5,'#b98f4a');gr.addColorStop(1,'#cf8ba6');g.fillStyle=gr;g.font='bold 76px "Songti SC",serif';g.fillText($('#rn').textContent,W/2,400);
 g.fillStyle='rgba(65,70,89,.72)';g.font='26px "Songti SC",serif';let cu='',y=560;for(const ch of $('#rl').textContent){if(g.measureText(cu+ch).width>W-240&&cu){g.fillText(cu,W/2,y);y+=46;cu=ch}else cu+=ch}g.fillText(cu,W/2,y);
 const t=new Date(),ds=`${t.getFullYear()}.${String(t.getMonth()+1).padStart(2,'0')}.${String(t.getDate()).padStart(2,'0')}`;g.fillStyle='rgba(185,143,74,.8)';g.font='22px sans-serif';g.fillText(ds,W/2,Hh-190);
-c.toBlob(bl=>{const a=document.createElement('a');a.href=URL.createObjectURL(bl);a.download='张力专属鉴定书_'+ds+'.png';a.click();toast('卡片已保存')})};
+c.toBlob(bl=>{const ios=/iPhone|iPad|iPod/.test(navigator.userAgent);const a=document.createElement('a');a.href=URL.createObjectURL(bl);a.download='张力专属鉴定书_'+ds+'.png';if(ios){a.target='_blank';a.rel='noopener'}a.click();toast(ios?'已生成图片，长按可保存':'卡片已保存')})};
 
 /* 音乐 / 提示 */
 function toast(m){const d=document.createElement('div');d.className='toast';d.textContent=m;document.body.appendChild(d);setTimeout(()=>d.remove(),2400)}
